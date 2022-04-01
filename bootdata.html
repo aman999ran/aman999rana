@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+
+<script>
+  var MackupData = [
+    {
+      image_url: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1311144329_RLLZ_2_large.jpg?v=1648545204",
+      brandname: "WESTMAN ATELIER",
+      productName:"Eye Pods",
+      price: 88,
+      available:"3 more colors"
+    },
+    {
+      image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313029374_RLLZ_2_large.jpg?v=1648534211",
+      image2_url:
+        "https://cdn.shopify.com/s/files/1/0637/6147/products/ILIA_FULLEST_SWATCH_Open.jpg?v=1626899469",
+      brandname: "ILIA",
+      productName:"Fullest Volumizing Mascara",
+      price: 28,
+      available:"2 more sizes"
+    },
+    {
+      image_url: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1611546_large.jpg?v=1636498806",
+      image2_url:
+        "https://cdn.shopify.com/s/files/1/0637/6147/products/Im-possibleMascara_10.jpg?v=1630032069",
+      brandname: "KJAER WEIS",
+      productName:"Im-Possible Mascara",
+      price: 32,
+      available:"2 more sizes"
+    },
+    {
+      image_url: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313214045_RLLZ_2_large.jpg?v=1648605980",
+      image2_url:
+        "https://cdn.shopify.com/s/files/1/0637/6147/products/30PCH2.jpg?v=1632360546",
+      brandname: "TOWER 28",
+      productName:"SunnyDays Tinted SPF Sunscreen Foundation",
+      price: 30,
+      available:"14 more colors"
+    },
+    {
+      image_url: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313705449_RLLZ_2_large.jpg?v=1647897497",
+      image2_url:
+        "https://cdn.shopify.com/s/files/1/0637/6147/products/Small-Wonders_Products.jpg?v=1634102276",
+      brandname: "ILIA",
+      productName:"Small Wonders",
+      price: 29,
+      available:"4 more colors"
+    },
+    {
+      image_url: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313149638_RLLZ_2_large.jpg?v=1648539775",
+      image2_url:
+        "https://cdn.shopify.com/s/files/1/0637/6147/products/BFF_Swatch.jpg?v=1624315540",
+      brandname: "KJAER WEIS",
+      productName:"Light Show Color Melt Multi-Use Pigment",
+      price: 22,
+      available:"8 more colors"
+    },
+    {
+      image_url: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313065380_RLLZ_2_large.jpg?v=1648596565",
+      image2_url:
+        "https://cdn.shopify.com/s/files/1/0637/6147/products/MiracleBalm_AuNaturel_Model.jpg?v=1641610417",
+      brandname: "JONES ROAD",
+      productName:"Miracle Balm",
+      price: 38,
+      available:"6 more colors"
+    },
+    {
+      image_url:"https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1311181671_RLLZ_2_large.jpg?v=1648534119",
+      image2_url:
+        "https://cdn.shopify.com/s/files/1/0637/6147/products/Face-pencil-swatch-1.jpg?v=1641610376",
+      brandname: "JONES ROAD",
+      productName:"The Face Pencil",
+      price: 25,
+      available:"25 more colors"
+    },
+    {
+      image_url: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313149011_RLLZ_2_large.jpg?v=1647898308",
+      image2_url:
+        "https://cdn.shopify.com/s/files/1/0637/6147/products/ILIA_Mascara_Hero_2.jpg?v=1582220324",
+      brandname: "ILIA",
+      productName:"Limitless Lash Mascara",
+      price: 28,
+      available:"2 more sizes"
+    },
+    {
+      image_url: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313115911_RLLZ_2_large.jpg?v=1648369128",
+      image2_url:
+        "https://cdn.shopify.com/s/files/1/0637/6147/products/ILIA_SSST_Model_ST0.5.jpg?v=1613465320",
+      brandname: "ILIA",
+      productName:"Super Serum Skin Tint SPF 40",
+      price: 38,
+      available:"30 more colors"
+    },
+    {
+      image_url: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313168430_RLLZ_2_large.jpg?v=1648601812",
+      image2_url:
+        "https://cdn.shopify.com/s/files/1/0637/6147/products/lily_lolo_mascara_black_swatch_at_credo_beauty.jpg?v=1567631096",
+      brandname: "LILY LOLO",
+      productName:"Lily Lolo Vegan Mascara",
+      price: 20,
+      available:"3 more colors"
+    },
+    {
+      image_url: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313199116_RLLZ_2_large.jpg?v=1648536033",
+      image2_url:
+        "https://cdn.shopify.com/s/files/1/0637/6147/products/5-in-1-tinted-face-arm_swatches.jpg?v=1622588220",
+      brandname: "KJAER WEIS",
+      productName:"5-in-1 Tinted Moisturizing Face Sunscreen",
+      price: 45,
+      available:"4 more colors"
+    },
+    {
+      image_url: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313143024_RLLZ_2_large.jpg?v=1648540836",
+      image2_url:
+        "https://cdn.shopify.com/s/files/1/0637/6147/products/Fragrance_Alt_image_600x600_3a855b17-2289-4f49-9b3c-0f3a58d1275d.jpg?v=1569930354",
+      brandname: "LILY LOLO",
+      productName:"Olio E Osso Tinted Balms",
+      price: 28,
+      available:"11 more colors"
+    },
+    {
+      image_url: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1893133_large.jpg?v=1637943665",
+      image2_url:
+        "https://cdn.shopify.com/s/files/1/0637/6147/products/RMS_UCU_000_816248020645_SWATCH.jpg?v=1617046525",
+      brandname: "JONES ROAD",
+      productName:"'Un' Cover-Up",
+      price: 36,
+      available:"16 more colors"
+    },
+    {
+      image_url: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313248975_RLLZ_2_large.jpg?v=1648363877",
+      image2_url:
+        "https://cdn.shopify.com/s/files/1/0637/6147/products/ILIA_WEB_CROP_SC.25.jpg?v=1613472981",
+      brandname: "ILIA",
+      productName:"True Skin Serum Concealer",
+      price: 30,
+      available:"20 more colors"
+    },
+    {
+      image_url: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313256624_RLLZ_2_large.jpg?v=1648547617",
+      image2_url:
+        "https://cdn.shopify.com/s/files/1/0637/6147/products/810102030313-02_352043af-d105-4f6d-8ecd-18add0ee37e0.jpg?v=1628804302",
+      brandname: "WESTMAN ATELIER",
+      productName:"Vital Skin Foundation Stick",
+      price: 68,
+      available:"21 more colors"
+    },
+    {
+      image_url: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313077357_RLLZ_2_large.jpg?v=1647898331",
+      image2_url:
+        "https://cdn.shopify.com/s/files/1/0637/6147/products/TSSF_Sable_SF0.5_swatch.jpg?v=1568829596",
+      brandname: "ILIA",
+      productName:"True Skin Serum Foundation",
+      price: 54,
+      available:"18 more colors"
+    },
+    {
+      image_url: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313196473_RLLZ_2_large.jpg?v=1648068950",
+      image2_url:
+        "https://cdn.shopify.com/s/files/1/0637/6147/products/kosas_lipstick_rosewater_swatch_at_credo_beauty.jpg?v=1568735513",
+      brandname: "KJAER WEIS",
+      productName:"Weightless Lipstick",
+      price: 28,
+      available:"8 more colors"
+    },
+    {
+      image_url: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313211896_RLLZ_2_large.jpg?v=1648382185",
+      image2_url:
+        "https://cdn.shopify.com/s/files/1/0637/6147/products/810102030139-02.jpg?v=1616087704",
+      brandname: "WESTMAN ATELIER",
+      productName:"Baby Cheeks Blush Stick",
+      price: 48,
+      available:"6 more colors"
+    },
+    {
+      image_url: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313140325_RLLZ_2_large.jpg?v=1648590771",
+      image2_url:
+        "https://cdn.shopify.com/s/files/1/0637/6147/products/00-5.png?v=1609821938",
+      brandname: "TOWER 28",
+      productName:"Revealer Super Creamy + Brightening Concealer",
+      price: 28,
+      available:"28 more colors"
+    },
+    {
+      image_url: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/PROx17hBZUmSaDigEIoyMgOk9ObYj6CC-25_large.jpg?v=1648522743",
+      image2_url:
+        "https://cdn.shopify.com/s/files/1/0637/6147/products/ilia_multi_stick_all_of_me_swatch_at_credo_beauty_68fe49a9-a1da-4abb-904b-5db31e918468.jpg?v=1568672253",
+      brandname: "ILIA",
+      productName:"Ilia Multi-Stick",
+      price: 34,
+      available:"8 more colors"
+    },
+    {
+      image_url: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313174438_RLLZ_2_large.jpg?v=1648595979",
+      image2_url:
+        "https://cdn.shopify.com/s/files/1/0637/6147/products/32006_Expressionist_Mascara-Mini_Swatch.jpg?v=1634707869",
+      brandname: "JONES ROAD",
+      productName:"Expressionist PRO Mascara",
+      price: 19,
+      available:"3 more colors"
+    },
+    {
+      image_url: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313057961_RLLZ_2_large.jpg?v=1647650007",
+      image2_url:
+        "https://cdn.shopify.com/s/files/1/0637/6147/products/110-Fazon-Smear.png?v=1627315184",
+      brandname: "TOWER 28",
+      productName:"High Fidelity Foundation",
+      price: 38,
+      available:"43 more colors"
+    },
+    {
+      image_url: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313163251_RLLZ_2_large.jpg?v=1647381464",
+      image2_url:
+        "https://cdn.shopify.com/s/files/1/0637/6147/products/BrowGoalsPencilBlonde_swatch.jpg?v=1623204692",
+      brandname: "JONES ROAD",
+      productName:"Brow Goals Pencil",
+      price: 14,
+      available:"5 more colors"
+    },
+  {
+      image_url: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313199128_RLLZ_2_large.jpg?v=1648587015",
+      image2_url:
+        "https://cdn.shopify.com/s/files/1/0637/6147/products/ShineOnChill.png?v=1597870660",
+      brandname: "TOWER 28",
+      productName:"ShineOn Lip Jelly",
+      price: 15,
+      available:"7 more colors"
+    },
+    {
+      image_url: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313986300_RLLZ_2_large.jpg?v=1648034331",
+      image2_url:
+        "https://cdn.shopify.com/s/files/1/0637/6147/products/ILIA_Liiquid_Liner_Swatch.jpg?v=1570269140",
+      brandname: "ILIA",
+      productName:"Clean Line Liquid Liner",
+      price: 28,
+      available:"4 more colors"
+    },
+    {
+      image_url: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313163285_RLLZ_2_large.jpg?v=1648594084",
+      image2_url:
+        "https://cdn.shopify.com/s/files/1/0637/6147/products/810102030177-01.jpg?v=1616019315",
+      brandname: "WESTMAN ATELIER",
+      productName:"Lit Up Highlight Stick",
+      price: 48,
+      available:"3 more colors"
+    },
+    {
+      image_url: "https://cdn.shopify.com/s/files/1/0248/3473/6191/products/1313232218_RLLZ_2_large.jpg?v=1648493453",
+      image2_url:
+        "https://cdn.shopify.com/s/files/1/0637/6147/products/ILIA_LiquidPowderEyeTint_Swatch_Fresco.jpg?v=1601516331",
+      brandname: "ILIA",
+      productName:"Liquid Powder Chromatic Eye Tint",
+      price: 28,
+      available:"8 more colors"
+    }
+ ]
+      localStorage.setItem("MackupData", JSON.stringify(MackupData));
+</script>

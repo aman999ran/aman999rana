@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/navbar.css">
+   
+</head>
+<body>
+    <div id="Header">
+        <div id="Fixed">
+            <div id="Home_Buttons">
+                <a href="../../index.html"><img id="Blue_Logo" src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?v=1574278243" alt=""></a>
+                <div id="symbol">
+                <a href="#"><img class="H_but" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWXI_JyOVRGL5fOKjn9qMUF3pWkgFcfDm1oQ&usqp=CAU" alt=""></a>
+                <a href="#" class="search" style="font-size: larger; margin-bottom: 30px;">SEARCH</a>
+                <a href="./Login_Page.html"><img class="H_but" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwwJnHBJdUyCsrW7qVQ8vdXeTmdRD6Js9Pmg&usqp=CAU" alt=""></a>
+                <a href="./Cart_Page.html"><img class="H_but" src="https://media.istockphoto.com/vectors/thin-line-shopping-bag-icon-illustration-design-vector-id653355496?k=20&m=653355496&s=170667a&w=0&h=VQQIU3uqbQuubef1qJCnAobIImZwE1LLbx51XIqQlPY=" alt=""></a>
+            </div>
+            </div>
+            <nav>
+                <p  class="hoverEff" id="Hand_Hover"><a href="boot.html">SHOES</a></p>
+                <p  class="hoverEff" id="Design_Hover"><a href="boot.html">DESIGNERS</a></p>
+                <p  class="hoverEff" id="Women-Hover"><a href="#">WOMEN</a></p>
+                <p class="hoverEff" id="Shoe_Hover"><a href="#">SHOES</a></p>
+                <p  class="hoverEff" id="Men_Hover"><a href="#">MEN</a></p>
+                <p  class="hoverEff" id="Sunglass_Hover"><a href="#">SUNGLASSES</a></p>
+                <p  class="hoverEff" id="Watch_Hover"><a href="#">JEWELRY & WATCHES</a></p>
+                <p  class="hoverEff" id="Under_Hover"><a href="#">UNDER $50</a></p>
+                <p  class="hoverEff" id="Beauty_Hover"><a href="#">BEAUTY</a></p>
+            </nav>
+            <div id="clearance"><a href="#" id="Clearance">CLEARANCE</a></div>
+        </div>
+        <div id="Spacediv">
+
+        </div>
+        
+               
+       
+                
+             
+    </div>
+</body>
+</html>
+
+
+<!-- <script>
+    let Hm= document.getElementById("Home_Buttons");
+
+    let Shoes= document.getElementById("Shoe_Hover");
+    let Hand= document.getElementById("Hand_Hover");
+    let Design= document.getElementById("Design_Hover");
+    let Women=document.getElementById("Women-Hover");
+    let Men=document.getElementById("Men_Hover");
+    let Glass=document.getElementById("Sunglass_Hover");
+    let Watch=document.getElementById("Watch_Hover");
+    let Under=document.getElementById("Under_Hover");
+    let Beauty=document.getElementById("Beauty_Hover");
+    let Clear= document.getElementById("Clearance");
+
+    let Shoe_Nav= document.getElementById("ShoesNav");
+    let Hand_Nav= document.getElementById("BagNav");
+    let Design_Nav= document.getElementById("DesignerNav");
+    let Women_Nav= document.getElementById("WomenNav");
+    let Men_Nav= document.getElementById("MenNav");
+    let Glass_Nav= document.getElementById("SunglassNav");
+    let Watch_Nav= document.getElementById("JewelryNav");
+    let Under_Nav= document.getElementById("UnderNav");
+    let Beauty_Nav= document.getElementById("BeautyNav");
+    let Clear_Nav= document.getElementById("ClearanceNav");
+
+    Shoes.addEventListener("mouseover", ()=>{
+        Shoe_Nav.setAttribute("id", "Show_Shoes");
+        Hand_Nav.setAttribute("id", "Hide_Hand");
+        Design_Nav.setAttribute("id", "Hide_Design");
+        Women_Nav.setAttribute("id", "Hide_Women");
+        Men_Nav.setAttribute("id", "Hide_Men");
+        Glass_Nav.setAttribute("id", "Hide_Glass");
+        Watch_Nav.setAttribute("id", "Hide_Watch");
+        Under_Nav.setAttribute("id", "Hide_Under");
+        Beauty_Nav.setAttribute("id", "Hide_Beauty");
+        Clear_Nav.setAttribute("id", "Hide_Clear");
+    });
+
+    Hand.addEventListener("mouseover", ()=>{
+        Shoe_Nav.setAttribute("id", "Hide_Shoes");
+        Hand_Nav.setAttribute("id", "Show_Hand");
+        Design_Nav.setAttribute("id", "Hide_Design");
+        Women_Nav.setAttribute("id", "Hide_Women");
+        Men_Nav.setAttribute("id", "Hide_Men");
+        Glass_Nav.setAttribute("id", "Hide_Glass");
+        Watch_Nav.setAttribute("id", "Hide_Watch");
+        Under_Nav.setAttribute("id", "Hide_Under");
+        Beauty_Nav.setAttribute("id", "Hide_Beauty");
+        Clear_Nav.setAttribute("id", "Hide_Clear");
+    });
+
+    Design.addEventListener("mouseover", ()=>{
+        Shoe_Nav.setAttribute("id", "Hide_Shoes");
+        Hand_Nav.setAttribute("id", "Hide_Hand");
+        Design_Nav.setAttribute("id", "Show_Design");
+        Women_Nav.setAttribute("id", "Hide_Women");
+        Men_Nav.setAttribute("id", "Hide_Men");
+        Glass_Nav.setAttribute("id", "Hide_Glass");
+        Watch_Nav.setAttribute("id", "Hide_Watch");
+        Under_Nav.setAttribute("id", "Hide_Under");
+        Beauty_Nav.setAttribute("id", "Hide_Beauty");
+        Clear_Nav.setAttribute("id", "Hide_Clear");
+    });
+
+    Women.addEventListener("mouseover", ()=>{
+        Shoe_Nav.setAttribute("id", "Hide_Shoes");
+        Hand_Nav.setAttribute("id", "Hide_Hand");
+        Design_Nav.setAttribute("id", "Hide_Design");
+        Women_Nav.setAttribute("id", "Show_Women");
+        Men_Nav.setAttribute("id", "Hide_Men");
+        Glass_Nav.setAttribute("id", "Hide_Glass");
+        Watch_Nav.setAttribute("id", "Hide_Watch");
+        Under_Nav.setAttribute("id", "Hide_Under");
+        Beauty_Nav.setAttribute("id", "Hide_Beauty");
+        Clear_Nav.setAttribute("id", "Hide_Clear");
+    });
+
+    Men.addEventListener("mouseover", ()=>{
+        Shoe_Nav.setAttribute("id", "Hide_Shoes");
+        Hand_Nav.setAttribute("id", "Hide_Hand");
+        Design_Nav.setAttribute("id", "Hide_Design");
+        Women_Nav.setAttribute("id", "Hide_Women");
+        Men_Nav.setAttribute("id", "Show_Men");
+        Glass_Nav.setAttribute("id", "Hide_Glass");
+        Watch_Nav.setAttribute("id", "Hide_Watch");
+        Under_Nav.setAttribute("id", "Hide_Under");
+        Beauty_Nav.setAttribute("id", "Hide_Beauty");
+        Clear_Nav.setAttribute("id", "Hide_Clear");
+    });
+
+    Glass.addEventListener("mouseover", ()=>{
+        Shoe_Nav.setAttribute("id", "Hide_Shoes");
+        Hand_Nav.setAttribute("id", "Hide_Hand");
+        Design_Nav.setAttribute("id", "Hide_Design");
+        Women_Nav.setAttribute("id", "Hide_Women");
+        Men_Nav.setAttribute("id", "Hide_Men");
+        Glass_Nav.setAttribute("id", "Show_Glass");
+        Watch_Nav.setAttribute("id", "Hide_Watch");
+        Under_Nav.setAttribute("id", "Hide_Under");
+        Beauty_Nav.setAttribute("id", "Hide_Beauty");
+        Clear_Nav.setAttribute("id", "Hide_Clear");
+    });
+
+    Watch.addEventListener("mouseover", ()=>{
+        Shoe_Nav.setAttribute("id", "Hide_Shoes");
+        Hand_Nav.setAttribute("id", "Hide_Hand");
+        Design_Nav.setAttribute("id", "Hide_Design");
+        Women_Nav.setAttribute("id", "Hide_Women");
+        Men_Nav.setAttribute("id", "Hide_Men");
+        Glass_Nav.setAttribute("id", "Hide_Glass");
+        Watch_Nav.setAttribute("id", "Show_Watch");
+        Under_Nav.setAttribute("id", "Hide_Under");
+        Beauty_Nav.setAttribute("id", "Hide_Beauty");
+        Clear_Nav.setAttribute("id", "Hide_Clear");
+    });
+
+    Under.addEventListener("mouseover", ()=>{
+        Shoe_Nav.setAttribute("id", "Hide_Shoes");
+        Hand_Nav.setAttribute("id", "Hide_Hand");
+        Design_Nav.setAttribute("id", "Hide_Design");
+        Women_Nav.setAttribute("id", "Hide_Women");
+        Men_Nav.setAttribute("id", "Hide_Men");
+        Glass_Nav.setAttribute("id", "Hide_Glass");
+        Watch_Nav.setAttribute("id", "Hide_Watch");
+        Under_Nav.setAttribute("id", "Show_Under");
+        Beauty_Nav.setAttribute("id", "Hide_Beauty");
+        Clear_Nav.setAttribute("id", "Hide_Clear");
+    });
+
+    Beauty.addEventListener("mouseover", ()=>{
+        Shoe_Nav.setAttribute("id", "Hide_Shoes");
+        Hand_Nav.setAttribute("id", "Hide_Hand");
+        Design_Nav.setAttribute("id", "Hide_Design");
+        Women_Nav.setAttribute("id", "Hide_Women");
+        Men_Nav.setAttribute("id", "Hide_Men");
+        Glass_Nav.setAttribute("id", "Hide_Glass");
+        Watch_Nav.setAttribute("id", "Hide_Watch");
+        Under_Nav.setAttribute("id", "Hide_Under");
+        Beauty_Nav.setAttribute("id", "Show_Beauty");
+        Clear_Nav.setAttribute("id", "Hide_Clear");
+    });
+
+    Clear.addEventListener("mouseover", ()=>{
+        Shoe_Nav.setAttribute("id", "Hide_Shoes");
+        Hand_Nav.setAttribute("id", "Hide_Hand");
+        Design_Nav.setAttribute("id", "Hide_Design");
+        Women_Nav.setAttribute("id", "Hide_Women");
+        Men_Nav.setAttribute("id", "Hide_Men");
+        Glass_Nav.setAttribute("id", "Hide_Glass");
+        Watch_Nav.setAttribute("id", "Hide_Watch");
+        Under_Nav.setAttribute("id", "Hide_Under");
+        Beauty_Nav.setAttribute("id", "Hide_Beauty");
+        Clear_Nav.setAttribute("id", "Show_Clear");
+    });
+    
+    Hm.addEventListener("mouseover", ()=>{
+        Shoe_Nav.setAttribute("id", "Hide_Shoes");
+        Hand_Nav.setAttribute("id", "Hide_Hand");
+        Design_Nav.setAttribute("id", "Hide_Design");
+        Women_Nav.setAttribute("id", "Hide_Women");
+        Men_Nav.setAttribute("id", "Hide_Men");
+        Glass_Nav.setAttribute("id", "Hide_Glass");
+        Watch_Nav.setAttribute("id", "Hide_Watch");
+        Under_Nav.setAttribute("id", "Hide_Under");
+        Beauty_Nav.setAttribute("id", "Hide_Beauty");
+        Clear_Nav.setAttribute("id", "Hide_Clear");
+    });
+
+
+</script> 
+     -->

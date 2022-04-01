@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/footer.css">
+    <script
+      src="https://kit.fontawesome.com/629044acfa.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+           body:hover{
+        cursor: pointer;
+       }
+        .container{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-areas: 
+            "b1 b1 b1 b1 b1 b1 b1 b2 b2 b2 b2 b2";
+        }
+        #leftbox{
+            grid-area: b1;
+            margin-top: 20px;
+            padding-left: 90px;
+            padding-right: 60px;
+        }
+        #rightbox{
+            grid-area: b2;
+            padding-left: 50px;
+            padding-right: 50px;
+            background-color: rgb(250,250,250);
+        }
+        #logod{
+            height: 70px;
+        }
+        #logod:hover{
+            cursor: pointer;
+        }
+        #info{
+            font-size: 20px;
+        }
+        #pay{
+            height: 130px;
+            width: 100%;
+            border: 1px solid grey;
+            margin-top: 0%;
+            padding-left: 10px;
+            border-radius: 5px;
+        }
+        #mess{
+            display: flex;
+            margin-top: 10px;
+        }
+        #mes{
+            margin-top: 9px;
+            margin-left: 5px;
+            font-size: 12px;
+        }
+        #return{
+            display: flex;
+            justify-content: space-between;
+        }
+        #continue{
+            background-color: rgb(0,32,92);
+            color: white;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+        #continue:hover{
+            background-color: rgb(0,38,62);
+            cursor: pointer;
+        }
+        #hortab{
+            margin-top: 40px;
+        }
+        #lastp{
+            display: flex;
+            justify-content: space-around;
+        }
+        #product{
+            width: 99%;
+            height: 130px;
+            margin-top: 20px;
+        }
+        #product2{
+            display: flex;
+        }
+        #gift{
+            width: 70%;
+            height: 32px;
+            margin-top: 0px;
+            border: 1px solid gray;
+            border-radius: 4px;
+        }
+        #apply{
+            width: 28%;
+            height: 37px;
+            margin-left: 15px;
+            border-radius: 4px;
+            background-color: rgb(192, 187, 187);
+            color: white;
+            border: 1px solid grey;
+        }
+        #contact{
+          font-size: 12px;
+          color: gray;
+          margin-top: 10px;
+          margin-right: 10px;
+        }
+        #ship{
+          font-size: 12px;
+          color: gray;
+          margin-top: 0%;
+          margin-right: 10px;
+        }
+        #hor{
+            width: 90%;
+            align-content: center;
+        }
+        #standard{
+          font-size: 12px;
+          color: gray;
+          margin-top: 10px;
+          margin-left: 5px;
+          padding-left: 10px;
+        }
+        #expect{
+          font-size: 12px;
+          color: gray;
+          margin-top: 5px;
+          padding-left: 10px;
+
+        }
+        #standard{
+            height: 80px;
+            width: 100%;
+            border: 1px solid grey;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            border-radius: 5px;
+        }
+        #bill1{
+            display: flex;
+        }
+        #chec{
+            margin-top: 10px;
+        }
+        #card{
+            width: 100%;
+            border: 1px solid rgb(207, 200, 200);
+            border-radius: 5px;
+        }
+        #carddetail{
+            display: flex;
+        }
+        #credit{
+            margin-top: 7px;
+            margin-left: 5px;
+        }
+        #expiry{
+            display: flex;
+        }
+        #cardnum{
+            padding-left: 10px;
+        }
+        #cnumber{
+            width: 96%;
+            height: 32px;
+            margin-top: 12px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+        #cname{
+            width: 96%;
+            height: 32px;
+            margin-top: 12px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+        #expiredate{
+            width: 46%;
+            height: 32px;
+            margin-top: 12px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+        #security{
+            width: 46%;
+            height: 32px;
+            margin-top: 12px;
+            margin-left: 10px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+        #paypallogo{
+            display: flex;
+        }
+        #paypallogo > img{
+            width: 110px;
+            margin-left: 10px;
+            margin-top: 0px;
+        }
+        #afterpay{
+          font-size: 15px;
+          margin-top: 5px;
+          padding-left: 10px;
+        }
+        #sub{
+            display: flex;
+            justify-content: space-between;
+        }
+        #apply:hover{
+            background-color: rgb(0,32,92) ;
+            cursor: pointer;
+        }
+        #messeg{
+            font-size: 12px;
+        }
+        #messeg:hover{
+            cursor: pointer;
+        }
+        #fulladd{
+            display: flex;
+        }
+        #p1{
+            display: flex;
+            justify-content: space-between;
+        }
+        #p2{
+            display: flex;
+            justify-content: space-between;
+        }
+        #emailvalue{
+          font-size: 12px;
+          color: black;
+          margin-top: 10px;
+          margin-right: 10px;
+        }
+        #addressvalue1{
+          font-size: 12px;
+          color: black;
+          margin-top: 0%;
+          margin-right: 10px;
+        }
+        #addressvalue2{
+          font-size: 12px;
+          color: black;
+          margin-top: 0%;
+        }
+        #addressvalue3{
+          font-size: 12px;
+          color: black;
+          margin-top: 0%;
+        }
+        #totaldiv{
+            display: flex;
+            justify-content: space-between;
+        }
+        #info>span{
+            color: #be6274;
+        }
+        #valuess>p{
+            font-size: large;
+            font-weight: 600;
+        }
+        #totaldiv{
+            font-size: x-large;
+            font-weight: 600;
+        }
+        #messeg{
+            color:#be6274;
+            font-size: large;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="leftbox">
+            <img id="logod" src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?v=1574278243" alt="logo">
+            <p id="info" style="color: #418993;"><span onclick="window.location.href='cart.html'">Cart</span><i class="fas fa-angle-right" style="color: #418993;"></i><span onclick="window.location.href='Information.html'">Information</span><i class="fas fa-angle-right" style="color: #418993;"></i><span onclick="window.location.href='Shipping.html'">Shipping</span><i class="fas fa-angle-right" style="color: #418993;"></i> Payment</p>
+            <div id="pay">
+               <div id="p1">
+                <p id="contact">Contact</p>
+                <p id="emailvalue"></p>
+                <p id="contact">Change</p>
+               </div>
+               <hr id="hor">
+               <div id="p2">
+                <p id="ship">Ship to</p>
+                <div id="fulladd">
+                    <p id="addressvalue1"></p>
+                    <p id="addressvalue2"></p>
+                    <p id="addressvalue3"> United States</p>
+                </div>
+                <p id="ship">Change</p>
+               </div>
+               <hr id="hor">
+               <div id="p1">
+                <p id="ship">Method</p>
+                <p id="ship">Standard Shipping (arrives in 3-10 business days) $ 8.50</p>
+                <p id="ship">Change</p>
+               </div>
+            </div>
+            <br>
+            <p>Payment</p>
+            <p id="mes">All transactions are secure and encrypted.</p>
+            <div id="card">
+                <div id="carddetail">
+                    <input id="chec" type="radio">   
+                    <p id="credit">Credit Card</p>
+                </div>
+                <hr id="hort">
+                <div id="cardnum">
+                    <input id="cnumber" type="text" placeholder="Card number">
+                    <input id="cname" type="text" placeholder="Name on Card">
+                    <div id="expiry">
+                        <input id="expiredate" type="text" placeholder="Expiration date (MM/YY)">
+                        <input id="security" type="text" placeholder="Security code">
+                    </div>
+                </div>
+                <hr id="hort">
+                <div id="paypallogo">
+                    <input type="radio">
+                    <img src="https://logodix.com/logo/54098.png" alt="">
+                </div>
+                <div id="bill1">
+                    <input type="radio"> 
+                    <p id="afterpay">After pay</p>
+                </div>
+            </div>
+            <p>Billing Address</p>
+            <p id="mes">Select the address that matches your card or payment method.</p>
+            <div id="standard">
+                <div id="bill1">
+                    <input id="chec" type="radio">
+                    <p id="stan">Same as shipping address</p>
+                </div>
+                <hr id="hort">
+                <div id="bill1">
+                    <input type="radio"> 
+                    <p id="expect">Use a different billing address</p>
+                </div>
+             </div>
+            <div id="return">
+                <p id="messeg"><i class="fas fa-angle-right"></i><span onclick="window.location.href='Shipping.html'">Return to Shipping</span></p>
+                <button id="continue" onclick="alertmsg()" >Pay Now</button>
+            </div>
+            <p id="mes">By checking out, you agree to our Privacy Policy and Terms & Conditions.</p>
+            <hr id="hortab">
+            <di id="lastp">
+                <p id="mes">Refund Policy</p>
+                <p id="mes">Shipping Policy</p>
+                <p id="mes">Privacy Policy</p>
+                <p id="mes">Terms and Conditions</p>
+            </di>
+ 
+ 
+         </div>
+ 
+        <div id="rightbox">
+            <div id="product"></div>
+            <div id="product2">
+               <input id="gift" type="text" placeholder="Gift card or discount code">
+               <button id="apply">Apply</button>
+            </div>
+            <hr id="hortab">
+            <div id="sub">
+                <div id="subtot">
+                    <p>Subtotal</p>
+                    <p>Shipping</p>
+                    <p>Taxes</p>
+                </div>
+                <div id="valuess">
+                    <p id="cartval"></p>
+                    <p> $ 8.50</p>
+                    <p> $ 3.59</p>
+                </div>
+               </div>
+            <hr id="hortab">
+            <div id="totaldiv">
+                <p >Total</p>
+                <p id="total"></p>
+            </div>
+        </div>
+     </div>
+     <div id="Main_Foo_Div">
+        <div id="Foo1">
+            <div id="Foo1_div1">
+                <p><a href="#">Contact Us</a></p>
+                <p><a href="#">Frequently Asked Questions</a></p>
+                <p><a href="#">Shipping & Returns</a></p>
+                <p><a href="#">Pre-Owned Guide</a></p>
+            </div>
+            <div id="Foo1_div2">
+                <p><a href="#">Sell On Bluefly</a></p>
+                <p><a href="#">Privacy Policy</a></p>
+                <p><a href="#">Terms & Conditions</a></p>
+            </div>
+            <div id="Foo1_div3">
+                <p>Subscribe to get exclusive offers on designer brands</p>
+                <input type="email" placeholder="Enter Your Email">
+                <br>
+                <button>Submit</button>
+                <div id="Social_Acc">
+                    <a href="#"><img src="https://www.edigitalagency.com.au/wp-content/uploads/Instagram-logo-glyph-black-white-large-png.png" alt=""></a>
+                    <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEX///8EAgQAAADFxcWgoKC8vbxGRUZbWltTU1M0NDQoKSg4OThDQkNhYWFtbG0gISAsLixLSUsdHR11dXVnaGcODQ4YFhjx8fH3+PeysrKqqqpQT1B9fX1nZmdhYGHV1dXn6OeNjI2Eg4Td3t1WVFbS0dLq6eqXmJebm5sjICO4H7iJAAAD20lEQVR4nO3di3LaMBSE4ViAyQ1IAsQEaLnlQt7/Bcu0M50yMcFHVrUrsf8DZM4XEyC2LF9dwZpVu87L/FD3XB3ckJ5Vu5fNpJy6pm3RA5uqOpvF05/Bi4alJFx3SxsuLWE1L824lITrbeGj+y1coodvULX0OnrpCLstfCkId2Ub30E4RgvONG/n4xdu2wLJhbNBWx+78LU9sHBDtOKbAhzBg3CCZpxuHALILOwGARbuBxpyqrfW76LswmkYIK9wGwhYuAGaUt8q0Gv0IPyJttQX5IOCWRjuELIKwx3CwvXRmLrewx1CUuFHOCCpMNRnIa1wFRDIKQz5Ii3cNZpTU5m7MOQ7KaewExJIKQz6Z0gpnOQunN3lLqyCvtEwCtdBgYzCsG+lhVugQV+aZy/c+18qrI3vVbqxCs+sxSjRoC9Zz7I5d//RW61n6LmbtzSutbhJbkmQ7XKFG72jBzY3tAl76Hntmc6zuSl6XI/6JiHrVYnvujYJ9+hxPXo0CRP8M7y6Nwnf0ON6ZPr30O3Q43p0YxKu0eN69JC98NYkrNDjejTKXvgk4YUJE/q38G/5C02XRy9AiJ7WJ4vQSUiZhBLyJ+GRsEBP65OO4ZEwxdOlNuEzelqfTMIn9LQ+mYQj9LQ+mYS36Gm/q+rUZxOe+CH/hDtn3Dl1Wbo58OwVbuxV7sCrSk7+DnB358USfmQvfMleiFvIEEfo3Cp7Ie76Wywh7qx4JCHwu3kkIfB7XSThY/ZC4M3qkYSb7IXAJUWRhLgvbbGEwNWnkYS4L22xhOvshcCLxFGE0JPicYTIE6pxhPfZC5F7RsQRInfciyPEnWmLJexmL0SudI8jRK50jyNE3hUVQ4g80xZJOM1eeIdcnRlFCN2cJooQurVnFCF0m+QoQujNe2GEZy7iQ2/eC7JSoSi/9rhYLPr9wXC83MyhC93fe/U9Z7/qy3K/hYScSSghfyZhkqsvJZSQPwnTF35mL7TsOCAhZxJKyJ9JSH3PzKlMwgf0tD5JKCF/EqYvtOxmJiFnEkrIn4RHwjv0tD5JKCF/EqYvtOwjnKbQshe0hJxJKCF/Eh4JkTdueSehhPxJmL7Q8iTZNIWW58xIyJmEEvJnEvI9vrFBJiHfQ0YbZBICd/LyT8L0hZanA0rImYQXJkzy89Ak5HvodoMkTF/4mr3Q8sRjCTmTUEL+TELoDju+SZi+cCChhPRJKCF/JuEAPa1PEqYvnEgoIX0SSsifSQh8mpN/JiF0F13fhhJKSJ+EEvIn4YUJx+hpfRpLKCF9EkrIX/7C4ZmHchyV5Cd+b99t3P5/P4PkF79qWBJNnBzqAAAAAElFTkSuQmCC" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div id="Foo2">
+            <a href="../../index.html"><img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/Untitled_2_.png_5_x104@2x.png?v=1620852820" alt=""></a>
+            <p>© 2022 Bluefly 1998-2020 BLUEFLY.COM OR ITS AFFILIATES ALL RIGHTS RESERVED.</p>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+   var credoarr = JSON.parse(localStorage.getItem("credoitems"))
+
+   var cartvalue = JSON.parse(localStorage.getItem("cartValue"));
+    var v1 = document.querySelector("#cartval");
+    v1.textContent = "$" + cartvalue;
+
+    var sum = cartvalue + 8.50 +3.59;
+    var total = document.querySelector("#total");
+    total.textContent = "$" + sum;
+
+     
+     credoarr.map(function(data){
+         var p1 = document.querySelector("#emailvalue");
+         p1.textContent = data.email;
+ 
+         var p2 = document.querySelector("#addressvalue1");
+         p2.textContent = data.address;
+ 
+         var p3 = document.querySelector("#addressvalue2");
+         p3.textContent = data.city + ",";
+     });
+     
+
+    function alertmsg(){
+        alert("Payment Successful");
+        window.location.href = "index.html";
+    }
+</script>

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/footer.css">
+    <script
+      src="https://kit.fontawesome.com/629044acfa.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <style>
+       body:hover{
+        cursor: pointer;
+       }
+        .container{
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(12,1fr);
+            grid-template-areas: 
+            "b1 b1 b1 b1 b1 b1 b1 b2 b2 b2 b2 b2";
+        }
+        #leftbox{
+            grid-area: b1;
+            margin-top: 20px;
+            padding-left: 90px;
+            padding-right: 60px;
+        }
+        #rightbox{
+            grid-area: b2;
+            padding-left: 50px;
+            padding-right: 50px;
+            background-color: rgb(250,250,250);
+        }
+        #logod{
+            height: 70px;
+        }
+        #logod:hover{
+            cursor: pointer;
+        }
+        #info{
+            font-size: 20px;
+        }
+        #express{
+             text-align: center;
+            font-size: 12px;
+            margin-bottom: 0px;
+        }
+        #pay{
+            height: 60px;
+            width: 100%;
+            border: 1px solid grey;
+            margin-top: 0%;
+            border-radius: 5px;
+        }
+        #or{
+            text-align: center;
+            font-size: 12px;
+            margin-bottom: 0%;
+        }
+        #hort{
+            margin-top: 0%;
+        }
+        #contact{
+            display: flex;
+            justify-content: space-between;
+        }
+        #contact>a{
+            margin-top: 16px;
+            margin-left: 0%;
+        }
+        #already{
+            margin-right: 120px;
+        }
+        #email{
+            width: 100%;
+            height: 36px;
+            font-size: 12px;
+        }
+        #em{
+            width: 99%;
+            height: 32px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        #mess{
+            display: flex;
+            margin-top: 10px;
+        }
+        #mes{
+            margin-top: 9px;
+            margin-left: 5px;
+            font-size: 12px;
+        }
+        #messeg{
+            margin-top: 9px;
+            margin-left: 5px;
+            font-size: 20px;
+            color: #be6274;
+        }
+        #messeg:hover{
+            cursor: pointer;
+        }
+        #chec{
+            margin-top: 0px;
+        }
+        #fname{
+            width: 221px;
+            height: 32px;
+            font-size: 12px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+        #lname{
+            width: 225px;
+            height: 32px;
+            font-size: 12px;
+            margin-left: 10px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+        #addr{
+            width: 99%;
+            height: 32px;
+            margin-top: 12px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+        #apart{
+            width: 99%;
+            height: 32px;
+            margin-top: 12px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+        #city{
+            width: 99%;
+            height: 32px;
+            margin-top: 12px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+        #phone{
+            width: 99%;
+            height: 32px;
+            margin-top: 12px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+        #coun{
+            height: 36px;
+            margin-top: 12px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+        #stat{
+            height: 36px;
+            margin-top: 12px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+        #zip{
+            height: 32px;
+            width: 213px;
+            margin-top: 12px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+        #chec{
+            margin-top: 9px;
+        }
+        #message1{
+            display: flex;
+            margin-top:0%;
+        }
+        #message2{
+            display: flex;
+            margin-top: 0%;
+        }
+        #message3{
+            margin-left: 25px;
+
+        }
+        #return{
+            display: flex;
+            justify-content: space-between;
+        }
+        #continue{
+            background-color: rgb(0,32,92);
+            color: white;
+            border: 1px solid white;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+        #continue:hover{
+            background-color: rgb(0,38,62);
+            cursor: pointer;
+        }
+        #hortab{
+            margin-top: 40px;
+        }
+        #lastp{
+            display: flex;
+            justify-content: space-around;
+        }
+        #product{
+            width: 99%;
+            height: 130px;
+            margin-top: 20px;
+        }
+        #product2{
+            display: flex;
+        }
+        #gift{
+            width: 70%;
+            height: 32px;
+            margin-top: 0px;
+            border-radius: 4px;
+            border: 1px solid grey;
+        }
+        #apply{
+            width: 28%;
+            height: 37px;
+            margin-left: 15px;
+            border-radius: 4px;
+            background-color: rgb(187, 184, 184);
+            color: white;
+            border: 1px solid grey;
+        }
+        #apply:hover{
+            background-color: rgb(0,32,92) ;
+            cursor: pointer;
+        }
+        #yello{
+            width: 50%;
+            height: 35px;
+            background-color: rgb(255,196,57);
+            margin: auto;
+            margin-top: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+        }
+        #yello:hover{
+            cursor: pointer;
+        }
+        #yello>img{
+            height: 30px;
+           
+            margin-top: 2px;
+        }
+        #infor{
+            display: flex;
+        }
+        #sub{
+            display: flex;
+            justify-content: space-between;
+        }
+        #totaldiv{
+            display: flex;
+            justify-content: space-between;
+        }
+        #info>span{
+            color: #be6274;
+        }
+        #valuess>p{
+            font-size: large;
+            font-weight: 600;
+        }
+        #totaldiv{
+            font-size: x-large;
+            font-weight: 600;
+        }
+        #log{
+            color:#be6274;
+            font-size: large;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div id="leftbox">
+           <img id="logod" src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?v=1574278243" alt="logo">
+           <p id="info" style="color: #418993;"><span onclick="window.location.href='cart.html'">Cart</span> <i class="fas fa-angle-right"></i> Information</p>
+           <p id="express">Express Checkout</p>
+           <div id="pay">
+              <div id="yello">
+                 <img  src="https://logodix.com/logo/54098.png" alt="">
+              </div>
+           </div>
+           <p id="or">OR</p>
+           <hr id="hort">
+           <div id="contact">
+               <p id="already">Contact Information</p>
+               <p>Already have an Account/</p>
+               <a id="log" href="login.html">Login</a>
+           </div>
+           <div id="email" >
+               <input id="em" type="text" placeholder="Email">
+           </div>
+           <div id="mess">
+               <input id="chec" type="checkbox">
+                <p id="mes">Email me with news and offers</p>
+           </div>
+           <p>Shipping Address</p>
+           <div id="ship">
+               <input id="fname" type="text" placeholder="First name"><input id="lname" type="text" placeholder="Last name">
+           </div>
+           <input id="addr" type="text" placeholder="Address">
+           <input id="apart" type="text" placeholder="Apartment,Suite,etc(Optional)">
+           <input id="city" type="text" placeholder="City">
+           <div id="country">
+               <select name="" id="coun" >
+                   <option >Country/Region</option>
+                   <option>United States</option>
+               </select>
+               <select name="" id="stat">
+                   <option>State</option>
+                   <option value="">Alabama</option>
+                   <option value="">Alaska</option>
+                   <option value="">American Samoa</option>
+                   <option value="">Arizona</option>
+                   <option value="">Arkansas</option>
+                   <option value="">California</option>
+                   <option value="">Colorado</option>
+                   <option value="">Connecticut</option>
+                   <option value="">Delaware</option>
+                   <option value="">Florida</option>
+                   <option value="">Gorgia</option>
+                   <option value="">Guam</option>
+                   <option value="">Idaho</option>
+                   <option value="">Indiana</option>
+                   <option value="">Kansas</option>
+               </select>
+               <input id="zip" type="text" placeholder="ZIP Code">
+           </div>
+           <input id="phone" type="text" placeholder="Phone">
+           <div id="message1">
+            <input id="chec" type="checkbox">
+             <p id="mes">Save this information for next time</p>
+           </div>
+           <div id="message2">
+            <input id="chec" type="checkbox">
+             <p id="mes">Send me news and special offers via text message*</p>
+           </div>
+           <div id="message3">
+               <p id="mes">By checking the box and entering your phone number above, you consent to receive marketing text messages from Credo Beauty at the number provided, including messages sent by autodialer. Consent is not a condition of any purchase. Message and data rates may apply. Message frequency varies. Reply HELP for help or STOP to cancel. View our Privacy Policy and Terms of Service.</p>
+           </div>
+           <div id="return">
+               <p id="messeg"><i class="fas fa-angle-right"></i><span onclick="window.location.href = 'cart.html'">Return to cart</span></p>
+               <button id="continue" onclick="window.location.href = 'Payment.html'">Continue To Shipping</button>
+           </div>
+           <p id="mes">By checking out, you agree to our Privacy Policy and Terms & Conditions.</p>
+           <hr id="hortab">
+           <di id="lastp">
+               <p id="mes">Refund Policy</p>
+               <p id="mes">Shipping Policy</p>
+               <p id="mes">Privacy Policy</p>
+               <p id="mes">Terms and Conditions</p>
+           </di>
+
+
+        </div>
+
+       <div id="rightbox">
+           <div id="product"></div>
+           <div id="product2">
+              <input id="gift" type="text" placeholder="Gift card or discount code">
+              <button id="apply">Apply</button>
+           </div>
+           <hr id="hortab">
+           <div id="sub">
+            <div id="subtot">
+                <p>Subtotal</p>
+                <p>Shipping</p>
+                <p>Taxes</p>
+            </div>
+            <div id="valuess">
+                <p id="cartval"></p>
+                <p> $ 8.50</p>
+                <p> $ 3.59</p>
+            </div>
+           </div>
+           <hr id="hortab">
+           <div id="totaldiv">
+               <p >Total</p>
+               <p id="total"></p>
+           </div>
+       </div>
+    </div>
+    <div id="Main_Foo_Div">
+        <div id="Foo1">
+            <div id="Foo1_div1">
+                <p><a href="#">Contact Us</a></p>
+                <p><a href="#">Frequently Asked Questions</a></p>
+                <p><a href="#">Shipping & Returns</a></p>
+                <p><a href="#">Pre-Owned Guide</a></p>
+            </div>
+            <div id="Foo1_div2">
+                <p><a href="#">Sell On Bluefly</a></p>
+                <p><a href="#">Privacy Policy</a></p>
+                <p><a href="#">Terms & Conditions</a></p>
+            </div>
+            <div id="Foo1_div3">
+                <p>Subscribe to get exclusive offers on designer brands</p>
+                <input type="email" placeholder="Enter Your Email">
+                <br>
+                <button>Submit</button>
+                <div id="Social_Acc">
+                    <a href="#"><img src="https://www.edigitalagency.com.au/wp-content/uploads/Instagram-logo-glyph-black-white-large-png.png" alt=""></a>
+                    <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEX///8EAgQAAADFxcWgoKC8vbxGRUZbWltTU1M0NDQoKSg4OThDQkNhYWFtbG0gISAsLixLSUsdHR11dXVnaGcODQ4YFhjx8fH3+PeysrKqqqpQT1B9fX1nZmdhYGHV1dXn6OeNjI2Eg4Td3t1WVFbS0dLq6eqXmJebm5sjICO4H7iJAAAD20lEQVR4nO3di3LaMBSE4ViAyQ1IAsQEaLnlQt7/Bcu0M50yMcFHVrUrsf8DZM4XEyC2LF9dwZpVu87L/FD3XB3ckJ5Vu5fNpJy6pm3RA5uqOpvF05/Bi4alJFx3SxsuLWE1L824lITrbeGj+y1coodvULX0OnrpCLstfCkId2Ub30E4RgvONG/n4xdu2wLJhbNBWx+78LU9sHBDtOKbAhzBg3CCZpxuHALILOwGARbuBxpyqrfW76LswmkYIK9wGwhYuAGaUt8q0Gv0IPyJttQX5IOCWRjuELIKwx3CwvXRmLrewx1CUuFHOCCpMNRnIa1wFRDIKQz5Ii3cNZpTU5m7MOQ7KaewExJIKQz6Z0gpnOQunN3lLqyCvtEwCtdBgYzCsG+lhVugQV+aZy/c+18qrI3vVbqxCs+sxSjRoC9Zz7I5d//RW61n6LmbtzSutbhJbkmQ7XKFG72jBzY3tAl76Hntmc6zuSl6XI/6JiHrVYnvujYJ9+hxPXo0CRP8M7y6Nwnf0ON6ZPr30O3Q43p0YxKu0eN69JC98NYkrNDjejTKXvgk4YUJE/q38G/5C02XRy9AiJ7WJ4vQSUiZhBLyJ+GRsEBP65OO4ZEwxdOlNuEzelqfTMIn9LQ+mYQj9LQ+mYS36Gm/q+rUZxOe+CH/hDtn3Dl1Wbo58OwVbuxV7sCrSk7+DnB358USfmQvfMleiFvIEEfo3Cp7Ie76Wywh7qx4JCHwu3kkIfB7XSThY/ZC4M3qkYSb7IXAJUWRhLgvbbGEwNWnkYS4L22xhOvshcCLxFGE0JPicYTIE6pxhPfZC5F7RsQRInfciyPEnWmLJexmL0SudI8jRK50jyNE3hUVQ4g80xZJOM1eeIdcnRlFCN2cJooQurVnFCF0m+QoQujNe2GEZy7iQ2/eC7JSoSi/9rhYLPr9wXC83MyhC93fe/U9Z7/qy3K/hYScSSghfyZhkqsvJZSQPwnTF35mL7TsOCAhZxJKyJ9JSH3PzKlMwgf0tD5JKCF/EqYvtOxmJiFnEkrIn4RHwjv0tD5JKCF/EqYvtOwjnKbQshe0hJxJKCF/Eh4JkTdueSehhPxJmL7Q8iTZNIWW58xIyJmEEvJnEvI9vrFBJiHfQ0YbZBICd/LyT8L0hZanA0rImYQXJkzy89Ak5HvodoMkTF/4mr3Q8sRjCTmTUEL+TELoDju+SZi+cCChhPRJKCF/JuEAPa1PEqYvnEgoIX0SSsifSQh8mpN/JiF0F13fhhJKSJ+EEvIn4YUJx+hpfRpLKCF9EkrIX/7C4ZmHchyV5Cd+b99t3P5/P4PkF79qWBJNnBzqAAAAAElFTkSuQmCC" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div id="Foo2">
+            <a href="../../index.html"><img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/Untitled_2_.png_5_x104@2x.png?v=1620852820" alt=""></a>
+            <p>© 2022 Bluefly 1998-2020 BLUEFLY.COM OR ITS AFFILIATES ALL RIGHTS RESERVED.</p>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("#continue").addEventListener("click",mydata);
+    var credoarr = JSON.parse(localStorage.getItem("credoitems")) || [];
+
+    var cartvalue = JSON.parse(localStorage.getItem("cartValue"));
+    var v1 = document.querySelector("#cartval");
+    v1.textContent = "$" + cartvalue;
+
+    var sum = cartvalue + 8.50 +3.59;
+    var total = document.querySelector("#total");
+     total.textContent = "$" + sum;
+
+
+    function mydata(event){
+        event.preventDefault();
+        var fname = document.querySelector("#fname").value;
+        var lname = document.querySelector("#lname").value;
+        var email = document.querySelector("#em").value;
+        var address = document.querySelector("#addr").value;
+        var city = document.querySelector("#city").value;
+        var country = document.querySelector("#coun").value;
+
+        var credoobj = {
+            firstname : fname,
+            lastname : lname,
+            email : email,
+            address : address,
+            city : city,
+            country : country,
+        };
+        credoarr.push(credoobj);
+        localStorage.setItem("credoitems",JSON.stringify(credoarr));
+        console.log(credoarr)
+    }
+</script>

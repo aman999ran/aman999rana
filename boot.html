@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/footer.css">
+    <script
+      src="https://kit.fontawesome.com/629044acfa.js"
+      crossorigin="anonymous"
+
+
+    ></script>
+    <link rel="stylesheet" href="../style/navbar.css">
+    <style>
+      #container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        width: 100%;
+        /* border: 1px solid red; */
+        justify-content: center;
+      }
+
+      .box {
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        padding: 10px;
+
+      }
+      
+      .textbox {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+      #prodimg {
+        width: 100%;
+      }
+      #type {
+        text-align: center;
+
+        margin-bottom: 10px;
+        font-size: 12px;
+        color: #be6274;
+      }
+      #brandname {
+        text-align: center;
+        font-size: small;
+        margin: 0px;
+        margin-bottom: 10px;
+      }
+      #prodname {
+        text-align: center;
+        font-weight: 400;
+        margin: 0px;
+        margin-bottom: 10px;
+      }
+      #price {
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 10px;
+        font-size: medium;
+      }
+      #available {
+        text-align: center;
+        margin: 0px;
+        margin-bottom: 10px;
+        color: gray;
+      }
+      .NavBar {
+        width: 100%;
+        height: 110px;
+        /* border: 1 px solid red; */
+      }
+      #upper {
+        width: 100%;
+        height: 70px;
+
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        justify-content: center;
+        align-items: center;
+      }
+      #lower {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        border-bottom: 0.25px solid rgb(220, 218, 218);
+        border-top: 0.25px solid rgb(220, 218, 218);
+      }
+      #serchbar {
+        border: 0px;
+        border-bottom: 1px solid rgb(204, 202, 202);
+        margin: 5px;
+        width: 210px;
+        padding: 2px;
+      }
+      #logod {
+        height: 70px;
+      }
+      #lefttext {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      #lefttext > div {
+        padding: 8px;
+      }
+      #righttext {
+        margin: 5px;
+        color: gray;
+      }
+      #middel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #lower > div {
+        padding: 10px;
+        font-weight: 600;
+      }
+      #lower > div:last-child {
+        color: #418993;
+      }
+      #lower > div:hover {
+        color: #be6274;
+        border-bottom: 2px solid #be6274;
+      }
+      #lefttext > div:hover {
+        color: #be6274;
+        border-bottom: 2px solid #be6274;
+      }
+      #i1 {
+        color: rgb(61, 60, 60);
+        margin: 3px;
+      }
+      #i1:hover {
+        color: #418993;
+      }
+      #butdiv {
+        display: flex;
+        justify-content: center;
+      
+        
+      }
+      #butdiv>button{
+        background-color: white;
+        color: #be6274;
+        border: 0px;
+        border-radius: 3px;
+        margin: 5px;
+        width: 40px;
+        height: 40px;
+      }
+      #butdiv>button:hover{
+        background-color: #be6274;
+        color: white;
+
+      }
+
+      
+      
+      .bighead {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+
+      #head1 {
+        width: 96%;
+        height: 80px;
+        margin-left: 40px;
+        color: #418993;
+        font-size: x-large;
+        margin-top: 5px;
+        margin-bottom: 20px;
+      }
+      #head2 {
+        width: 96%;
+        height: 50px;
+        font-size: 12px;
+        display: flex;
+        margin-left: 40px;
+        margin-bottom: 10px;
+      }
+      #head2 > p {
+        color: rgb(84, 80, 80);
+        font-size: medium;
+      }
+      #head3 {
+        width: 93%;
+        height: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-left: 40px;
+        margin-bottom: 10px;
+      }
+      .head31 {
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .head32 {
+        display: flex;
+        width: 40%;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      select {
+        width: 100px;
+        height: 20px;
+        border: 1px solid rgb(95, 95, 95);
+        padding: 1px;
+        font-size: x-small;
+        color: gray;
+      }
+      #clear {
+        font-weight: 700;
+        font-size: medium;
+        padding: 3px;
+        border-bottom: 1px solid rgb(84, 82, 82);
+      }
+      #head4 {
+        width: 99%;
+        height: 50px;
+        text-align: center;
+        margin-top: 20px;
+      }
+      #head4 > button {
+        width: 200px;
+        height: 50px;
+        background-color: rgb(0, 38, 62);
+        color: white;
+        font-size: 20px;
+        border: 0px;
+      }
+      #head4 > button:hover {
+        background-color: white;
+        color: rgb(0, 38, 62);
+        border: 1px solid rgb(0, 38, 62);
+      }
+      #head5 {
+        width: 99%;
+        height: 35px;
+        background-color: rgb(190, 98, 115);
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        padding-top: 20px;
+        margin-top: 50px;
+      }
+      #head6 {
+        width: 70%;
+        margin: auto;
+      }
+      #head6>div>p{
+        text-align: justify;
+        text-justify: inter-word;
+      }
+      .changeanimation {
+        height: 25;
+        width: 100%;
+        margin-top: 0px;
+        overflow: hidden;
+        font-family: "Poppins", sans-serif;
+        background-color: #418993;
+      }
+      .changeanimation {
+        font-size: 15px;
+        font-weight: 600;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .changeanimation::after {
+        content: " ";
+        color: #fff;
+        background-color: #418993;
+        animation: textrotate 5s linear infinite;
+        -webkit-animation: textrotate 5s linear infinite;
+      }
+     
+    </style>
+  </head>
+  <body>
+    <div class="changeanimation">
+      <h1 class="textchange"></h1>
+    </div>
+    
+
+    <div id="Header">
+        <div id="Fixed">
+            <div id="Home_Buttons">
+                <a href="../../index.html"><img id="Blue_Logo" src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?v=1574278243" alt=""></a>
+                <div id="symbol">
+                <a href="#"><img class="H_but" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWXI_JyOVRGL5fOKjn9qMUF3pWkgFcfDm1oQ&usqp=CAU" alt=""></a>
+                <a href="#" class="search" style="font-size: larger; margin-bottom: 30px;">SEARCH</a>
+                <a href="./login.html"><img class="H_but" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwwJnHBJdUyCsrW7qVQ8vdXeTmdRD6Js9Pmg&usqp=CAU" alt=""></a>
+                <a href="cart.html"><img class="H_but" src="https://media.istockphoto.com/vectors/thin-line-shopping-bag-icon-illustration-design-vector-id653355496?k=20&m=653355496&s=170667a&w=0&h=VQQIU3uqbQuubef1qJCnAobIImZwE1LLbx51XIqQlPY=" alt=""></a>
+            </div>
+            </div>
+            <nav>
+                <p  class="hoverEff" id="Hand_Hover"><a href="boot.html">shoes</a></p>
+                <p  class="hoverEff" id="Design_Hover"><a href="boot.html">DESIGNERS</a></p>
+                <p  class="hoverEff" id="Women-Hover"><a href="boot.html">WOMEN</a></p>
+                <p class="hoverEff" id="Shoe_Hover"><a href="boot.html">SHOES</a></p>
+                <p  class="hoverEff" id="Men_Hover"><a href="boot.html">MEN</a></p>
+                <p  class="hoverEff" id="Sunglass_Hover"><a href="boot.html">SUNGLASSES</a></p>
+                <p  class="hoverEff" id="Watch_Hover"><a href="boot.html">JEWELRY & WATCHES</a></p>
+                <p  class="hoverEff" id="Under_Hover"><a href="boot.html">UNDER $50</a></p>
+                <p  class="hoverEff" id="Beauty_Hover"><a href="boot.html">BEAUTY</a></p>
+            </nav>
+            <div id="clearance"><a href="#" id="Clearance">CLEARANCE</a></div>
+        </div>
+        <div id="Spacediv">
+
+        </div>
+    <div class="bighead">
+      <div id="head1">
+        <h1 class="makeup">SHOES</h1>
+      </div>
+      <div id="head2">
+        <p>Home</p>
+        <p style="font-weight: 1500">/</p>
+        <p>SHOES</p>
+      </div>
+      <div id="head3">
+        <div class="head31">
+          <select id="s1" onchange="filterbrand()">
+            <option value="0">BRAND</option>
+            <option value="WESTMAN ATELIER">WESTMAN ATELIER</option>
+            <option value="ILIA">ILIA</option>
+            <option value="KJAER WEIS">KJAER WEIS</option>
+            <option value="TOWER 28">TOWER 28</option>
+            <option value="JONES ROAD">JONES ROAD</option>
+            <option value="LILY LOLO">LILY LOLO</option>
+          </select>
+          <select name="Concern" id="s2">
+            <option value="">CONCERN</option>
+          </select>
+          <select name="Category" id="s3">
+            <option value="">CATEGORY</option>
+          </select>
+          <select name="ingredient" id="s4">
+            <option value="">INGREDIENT</option>
+          </select>
+          <select  id="s5" onchange="filterprice()">
+            <option value="0">PRICE</option>
+            <option value="10 to 20">10 to 20</option>
+            <option value="21 to 30">21 to 30</option>
+            <option value="31 to 40">31 to 40</option>
+            <option value="41 to 50">41 to 50</option>
+            <option value="51 to 60">51 to 60</option>
+            <option value="61 to 70">61 to 70</option>
+            <option value="71 to 80">71 to 80</option>
+            <option value="81 to 90">81 to 90</option>
+          </select>
+          <p id="clear" onclick="clearfilter()">Clear Filters</p>
+        </div>
+        <div class="head32">
+          <p>Sort By :</p>
+          <select id="s6" onchange="sortPrice()">
+            <option value="0">RELEVENCE</option>
+            <option value="high">Price: High to Low</option>
+            <option value="low">Price: Low to High</option>
+            <option value="A">Tital: A to Z</option>
+            <option value="Z">Tital:Z to A</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div id="container"></div>
+    <div id="head4">
+      <button id="b1">Load More</button>
+    </div>
+  
+    <div id="Main_Foo_Div">
+      <div id="Foo1">
+          <div id="Foo1_div1">
+              <p><a href="#">Contact Us</a></p>
+              <p><a href="#">Frequently Asked Questions</a></p>
+              <p><a href="#">Shipping & Returns</a></p>
+              <p><a href="#">Pre-Owned Guide</a></p>
+          </div>
+          <div id="Foo1_div2">
+              <p><a href="#">Sell On Bluefly</a></p>
+              <p><a href="#">Privacy Policy</a></p>
+              <p><a href="#">Terms & Conditions</a></p>
+          </div>
+          <div id="Foo1_div3">
+              <p>Subscribe to get exclusive offers on designer brands</p>
+              <input type="email" placeholder="Enter Your Email">
+              <br>
+              <button>Submit</button>
+              <div id="Social_Acc">
+                  <a href="#"><img src="https://www.edigitalagency.com.au/wp-content/uploads/Instagram-logo-glyph-black-white-large-png.png" alt=""></a>
+                  <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEX///8EAgQAAADFxcWgoKC8vbxGRUZbWltTU1M0NDQoKSg4OThDQkNhYWFtbG0gISAsLixLSUsdHR11dXVnaGcODQ4YFhjx8fH3+PeysrKqqqpQT1B9fX1nZmdhYGHV1dXn6OeNjI2Eg4Td3t1WVFbS0dLq6eqXmJebm5sjICO4H7iJAAAD20lEQVR4nO3di3LaMBSE4ViAyQ1IAsQEaLnlQt7/Bcu0M50yMcFHVrUrsf8DZM4XEyC2LF9dwZpVu87L/FD3XB3ckJ5Vu5fNpJy6pm3RA5uqOpvF05/Bi4alJFx3SxsuLWE1L824lITrbeGj+y1coodvULX0OnrpCLstfCkId2Ub30E4RgvONG/n4xdu2wLJhbNBWx+78LU9sHBDtOKbAhzBg3CCZpxuHALILOwGARbuBxpyqrfW76LswmkYIK9wGwhYuAGaUt8q0Gv0IPyJttQX5IOCWRjuELIKwx3CwvXRmLrewx1CUuFHOCCpMNRnIa1wFRDIKQz5Ii3cNZpTU5m7MOQ7KaewExJIKQz6Z0gpnOQunN3lLqyCvtEwCtdBgYzCsG+lhVugQV+aZy/c+18qrI3vVbqxCs+sxSjRoC9Zz7I5d//RW61n6LmbtzSutbhJbkmQ7XKFG72jBzY3tAl76Hntmc6zuSl6XI/6JiHrVYnvujYJ9+hxPXo0CRP8M7y6Nwnf0ON6ZPr30O3Q43p0YxKu0eN69JC98NYkrNDjejTKXvgk4YUJE/q38G/5C02XRy9AiJ7WJ4vQSUiZhBLyJ+GRsEBP65OO4ZEwxdOlNuEzelqfTMIn9LQ+mYQj9LQ+mYS36Gm/q+rUZxOe+CH/hDtn3Dl1Wbo58OwVbuxV7sCrSk7+DnB358USfmQvfMleiFvIEEfo3Cp7Ie76Wywh7qx4JCHwu3kkIfB7XSThY/ZC4M3qkYSb7IXAJUWRhLgvbbGEwNWnkYS4L22xhOvshcCLxFGE0JPicYTIE6pxhPfZC5F7RsQRInfciyPEnWmLJexmL0SudI8jRK50jyNE3hUVQ4g80xZJOM1eeIdcnRlFCN2cJooQurVnFCF0m+QoQujNe2GEZy7iQ2/eC7JSoSi/9rhYLPr9wXC83MyhC93fe/U9Z7/qy3K/hYScSSghfyZhkqsvJZSQPwnTF35mL7TsOCAhZxJKyJ9JSH3PzKlMwgf0tD5JKCF/EqYvtOxmJiFnEkrIn4RHwjv0tD5JKCF/EqYvtOwjnKbQshe0hJxJKCF/Eh4JkTdueSehhPxJmL7Q8iTZNIWW58xIyJmEEvJnEvI9vrFBJiHfQ0YbZBICd/LyT8L0hZanA0rImYQXJkzy89Ak5HvodoMkTF/4mr3Q8sRjCTmTUEL+TELoDju+SZi+cCChhPRJKCF/JuEAPa1PEqYvnEgoIX0SSsifSQh8mpN/JiF0F13fhhJKSJ+EEvIn4YUJx+hpfRpLKCF9EkrIX/7C4ZmHchyV5Cd+b99t3P5/P4PkF79qWBJNnBzqAAAAAElFTkSuQmCC" alt=""></a>
+              </div>
+          </div>
+      </div>
+      <div id="Foo2">
+          <a href="../../index.html"><img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/Untitled_2_.png_5_x104@2x.png?v=1620852820" alt=""></a>
+          <p>© 2022 Bluefly 1998-2020 BLUEFLY.COM OR ITS AFFILIATES ALL RIGHTS RESERVED.</p>
+      </div>
+  </div>
+  </body>
+</html>
+
+<script>
+  var MackupData = JSON.parse(localStorage.getItem("MackupData"));
+  var cartArr = JSON.parse(localStorage.getItem("cart")) || [];
+  var WishlistArr = JSON.parse(localStorage.getItem("Wishlist")) || [];
+  displayData(MackupData);
+
+  function filterbrand() {
+    var selected = document.querySelector("#s1").value;
+    if(selected !=0){
+    var filteredbrandList = MackupData.filter(function (elem) {
+      return elem.brandname == selected;
+    });
+  }
+  if(selected==0){
+    var filteredbrandList = MackupData.filter(function (elem) {
+      return elem
+    });
+  }
+    displayData(filteredbrandList);
+  }
+
+  function filterprice() {
+    var selected = document.querySelector("#s5").value;
+
+    if (selected == "0") {
+      var filteredpricedList=MackupData.filter(function (elem) {
+        return elem
+      });
+    }
+
+    if (selected == "10 to 20") {
+      var filteredpricedList=MackupData.filter(function (elem) {
+        return elem.price>=10 &&elem.price<=20
+      });
+    }
+    if (selected == "21 to 30") {
+      var filteredpricedList=MackupData.filter(function (elem) {
+        return elem.price>=21 &&elem.price<=30
+      });
+    }
+    if (selected == "31 to 40") {
+      var filteredpricedList=MackupData.filter(function (elem) {
+        return elem.price>=31 &&elem.price<=40
+      });
+    }
+    if (selected == "41 to 50") {
+      var filteredpricedList=MackupData.filter(function (elem) {
+        return elem.price>=41 &&elem.price<=50
+      });
+    }
+    if (selected == "51 to 60") {
+      var filteredpricedList=MackupData.filter(function (elem) {
+        return elem.price>=51 &&elem.price<=60
+      });
+    }
+    if (selected == "61 to 70") {
+      var filteredpricedList=MackupData.filter(function (elem) {
+        return elem.price>=61 &&elem.price<=70
+      });
+    }
+    if (selected == "71 to 80") {
+      var filteredpricedList=MackupData.filter(function (elem) {
+        return elem.price>=71 &&elem.price<=80
+      });
+    }
+    if (selected == "81 to 90") {
+      var filteredpricedList=MackupData.filter(function (elem) {
+        return elem.price>=81 &&elem.price<=90
+      });
+    }
+    displayData(filteredpricedList);
+    
+  }
+
+  function clearfilter(){
+    displayData(MackupData)
+  }
+
+  function sortPrice() {
+    var selected = document.querySelector("#s6").value;
+
+    if (selected == "low") {
+      MackupData.sort(function (a, b) {
+        return a.price - b.price;
+      });
+    }
+    if (selected == "high") {
+      MackupData.sort(function (a, b) {
+        return b.price - a.price;
+      });
+    }
+    if (selected == "A") {
+      MackupData.sort(function (a, b) {
+        return a.productName.charCodeAt(0) - b.productName.charCodeAt(0);
+      });
+    }
+    if (selected == "Z") {
+      MackupData.sort(function (a, b) {
+        return b.productName.charCodeAt(0) - a.productName.charCodeAt(0);
+      });
+    }
+    displayData(MackupData);
+  }
+
+  function displayData(MackupData) {
+    document.querySelector("#container").innerHTML = "";
+
+    MackupData.map(function (data) {
+      var div = document.createElement("div");
+      div.setAttribute("class", "box");
+
+      var imgdiv = document.createElement("div");
+      imgdiv.setAttribute("class", "imgbox");
+
+      var image = document.createElement("img");
+      image.setAttribute("id", "prodimg");
+      image.setAttribute("src", data.image_url);
+
+    //   image.addEventListener("mouseenter", function(){
+    //       image.src = data.image2_url})
+          
+    //   image.addEventListener("mouseout", function(){
+    //       image.src = data.image_url;})
+        
+      var textdiv = document.createElement("div");
+      textdiv.setAttribute("class", "textbox");
+
+      var type = document.createElement("p");
+      type.textContent = "Bestseller";
+      type.setAttribute("id", "type");
+
+      var brandname = document.createElement("p");
+      brandname.textContent = data.brandname;
+      brandname.setAttribute("id", "brandname");
+
+      var productName = document.createElement("h2");
+      productName.textContent = data.productName;
+      productName.setAttribute("id", "prodname");
+
+      var price = document.createElement("h5");
+      price.textContent = "$" + data.price;
+      price.setAttribute("id", "price");
+
+      var available = document.createElement("p");
+      available.textContent = data.available;
+      available.setAttribute("id", "available");
+
+      var butdiv = document.createElement("div");
+      butdiv.setAttribute("id", "butdiv");
+
+      var cart = document.createElement("button");
+      cart.setAttribute("id", "cartbut");
+      cart.setAttribute("class",`fas fa-cart-plus`) 
+      cart.addEventListener("click", function () {
+        addTocart(data);
+      });
+
+      var wishlist = document.createElement("button");
+      wishlist.setAttribute("id", "wishbut");
+      wishlist.setAttribute("class",`fas fa-heart`)
+      wishlist.addEventListener("click", function () {
+        addToWishlist(data);
+      });
+
+      imgdiv.append(image);
+      butdiv.append(cart, wishlist);
+      textdiv.append(type, brandname, productName, price, available, butdiv);
+      div.append(imgdiv, textdiv);
+      document.querySelector("#container").append(div);
+    });
+  }
+  function addTocart(data) {
+    cartArr.push(data);
+    localStorage.setItem("cart", JSON.stringify(cartArr));
+    alert("Added Succefully");
+    console.log(cartArr);
+  }
+  function addToWishlist(data) {
+    WishlistArr.push(data);
+    localStorage.setItem("Wishlist", JSON.stringify(WishlistArr));
+    alert("Added Succefully");
+    console.log(WishlistArr);
+  }
+</script>

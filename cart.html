@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bag.html</title>
+    <link rel="stylesheet" href="../style/navbar.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <script src="https://kit.fontawesome.com/a3b844b34e.js" crossorigin="anonymous"></script>
+    <style>
+        body:hover {
+            cursor: pointer;
+        }
+
+        #mainbagdiv {
+            width: 94%;
+            margin-left: 3%;
+            margin-right: 3%;
+
+            margin: auto;
+
+            display: flex;
+
+        }
+
+        #leftbagdiv {
+            width: 60%;
+            margin-left: 5%;
+
+        }
+
+        #baginput {
+            border: 0px;
+            border-bottom: 2px solid rgb(79, 77, 77);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            font-size: larger;
+        }
+
+        #a1 {
+            color: #be6274;
+        }
+
+        #a2 {
+            color: #418993;
+        }
+
+        #rewards {
+            border: 0.1px solid rgb(227, 227, 228);
+            width: 100%;
+            margin-top: 35px;
+
+        }
+
+        #rewards>h2 {
+            margin-top: 10px;
+            margin-left: 5px;
+            margin-bottom: 0px;
+        }
+
+        #rewards>p {
+            margin-top: 0px;
+
+        }
+
+        #icontag {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 12px;
+            align-items: center;
+        }
+
+        #ordersummary {
+            border: 0.1px solid rgb(215, 215, 216);
+            margin-left: 40px;
+            width: 30%;
+            height: 450px;
+            text-align: center;
+            margin-top: 100px;
+            margin-left: 5%;
+        }
+
+        #totalcount {
+
+            width: 300px;
+            margin: auto;
+            display: flex;
+
+            justify-content: space-between;
+        }
+
+        #totalcount>h2 {
+            margin: 5px;
+        }
+
+        #totalcount>h4 {
+            font-weight: 500;
+
+        }
+
+        #swapy {
+            border: 0px;
+
+            margin-top: 40px;
+        }
+
+        #swapy2 {
+            padding: 15px 50px 15px 50px;
+            margin-top: 10px;
+            background-color: #be6274;
+            color: white;
+            border: 0px;
+            width: 100%;
+        }
+
+        #swapy3 {
+            padding: 12px 95px 12px 95px;
+            margin-top: 10px;
+            height: 45px;
+            border: 0px;
+            border: 1px solid black;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        #whatstrending {
+
+            width: 90%;
+            margin: auto;
+            text-align: center;
+            color: #383b52;
+            margin-top: 20px;
+            font-size: x-large;
+        }
+
+        .maincont {
+            display: grid;
+            grid-template-columns: 100%;
+        }
+
+        #cartitem {
+            display: flex;
+            margin-top: 10px;
+            height: 200px;
+            border-bottom: 1px solid rgb(209, 209, 209);
+
+        }
+
+        #cartimgdiv {
+            width: 28%;
+
+            margin: 5px;
+        }
+
+        #cartimgdiv>img {
+            height: 185px;
+        }
+
+        #carttextdiv {
+            width: 70%;
+
+            margin: 5px;
+            padding: 10px;
+        }
+
+        #cartbrandname {
+            text-align: left;
+            margin-top: 20px;
+            margin-left: 5px;
+        }
+
+        #cartline1 {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #cartline1>div {
+            margin-top: 15px;
+            margin-left: 5px;
+            font-size: x-large;
+            font-weight: 540;
+        }
+
+        #cartline2 {
+            display: flex;
+            justify-content: space-between;
+            width: 50%;
+            margin-top: 20px;
+            margin-left: 5px;
+        }
+
+        #cartaddvalue {
+            padding: 0px;
+            width: 30px;
+            font-weight: bold;
+
+        }
+
+        #cartbottom {
+            color: gray;
+            display: flex;
+            margin-top: 15px;
+            text-align: right;
+            justify-content: flex-end;
+
+        }
+
+        #bottomline1 {
+
+            padding: 5px;
+            border-right: 1px solid;
+        }
+
+        #bottomline2 {
+            padding: 5px;
+
+        }
+
+        #onclickchange {
+            color: #be6274;
+
+            padding: 5px;
+        }
+
+        #addvaluebutton {
+
+            color: #be6274;
+        }
+
+        #bottomimages {
+            width: 90%;
+            /* border: 1px solid red; */
+            margin: auto;
+        }
+
+        #frontproductwindow {
+            width: 95%;
+            /* border: 1px solid black; */
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-gap: 15px;
+            justify-content: center;
+
+        }
+
+        #frontproductimg {
+            width: 250px;
+            height: 250px;
+        }
+
+        #imagetop1 {
+            width: 250px;
+            height: 250px;
+        }
+
+        .checked {
+            color: skyblue
+        }
+
+        #pricebar {
+            text-align: center;
+        }
+
+        #pricebar>h4,
+        p,
+        h5 {
+            margin: 5px;
+            font-weight: lighter;
+            font-family: sans-serif;
+        }
+
+        #verticalline {
+            /* border: 1px solid red; */
+            width: 2px;
+            height: 200px;
+            margin-top: 100px;
+            background-color: thistle;
+        }
+
+        #hovereffect {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        #hovereffect #frontproductimg {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 99;
+        }
+
+        #hovereffect:hover #frontproductimg {
+            display: inline;
+        }
+        .NavBar{
+            width: 100%;
+            height: 110px;
+            border: 1 px solid red;
+            
+        }
+        #upper{
+            width: 100%;
+            height: 70px;
+           
+            display: grid;
+            grid-template-columns: 1fr 1.8fr 1fr;
+            justify-content: center;
+            align-items: center;
+            
+
+        }
+        #lower{
+            width: 100%;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+            border-bottom: 0.25px solid rgb(220, 218, 218);
+            border-top: 0.25px solid rgb(220, 218, 218);
+          
+        }
+        #serchbar{
+            border: 0px;
+            border-bottom: 1px solid rgb(204, 202, 202);
+            margin: 5px;
+            width: 210px;
+            padding: 2px;
+
+        }
+        #logod{
+            height: 70px;
+
+        }
+        #lefttext{
+            display: flex;
+            justify-content: space-around;
+            align-items: center; 
+
+        }
+        #lefttext>div{
+            padding: 8px;
+        }
+        #righttext{
+          
+            margin: 5px;
+            color: gray;
+           
+        }
+        #righttext>button{
+            border: 0px;
+        }
+        #middel{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       
+        #lower>div{
+            padding: 10px;
+            font-weight: 600;
+            
+        }
+        #lower>div:last-child{
+            color: #418993;
+        }
+        #lower>div:hover{
+            color: #be6274;
+            border-bottom: 2px solid #be6274;
+        }
+        #lefttext>div:hover{
+            color: #be6274;
+            border-bottom: 2px solid #be6274;  
+        }
+        #i1{
+            color: rgb(61, 60, 60);
+            margin: 3px;
+            border: 0px;
+            font-size: larger;
+            margin: 3px;
+            padding: 0px;
+          
+        }
+        #i1:hover{
+            color:#418993;
+        }
+        .changeanimation {
+        height: 25;
+        width: 100%;
+        margin-top: 0px;
+        overflow: hidden;
+        font-family: "Poppins", sans-serif;
+        background-color: #418993;
+      }
+      .changeanimation {
+        font-size: 15px;
+        font-weight: 600;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .changeanimation::after {
+        content: " ";
+        color: #fff;
+        background-color: #418993;
+        animation: textrotate 5s linear infinite;
+        -webkit-animation: textrotate 5s linear infinite;
+      }
+   
+      #maincontactbox {
+        width: 100%;
+        height: 450px;
+        background-color: #19254b;
+        margin-top: 20px;
+        padding-left: 10px 20px 10px 20px;
+        margin-bottom: 0px;
+      }
+
+      #contactbox {
+        display: flex;
+      }
+
+      #contactbox > div > table {
+        margin-top: 20px;
+        margin-left: 120px;
+        color: white;
+      }
+      #tinput {
+        border: none;
+        background-color: midnightblue;
+        border-bottom: 2px solid rgb(247, 243, 243);
+        color: white;
+      }
+      #socialicon {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 120px;
+        width: 190px;
+        margin-top: 10px;
+        margin-top: 30px;
+      }
+      #socialicon > div > i {
+        color: white;
+        font-size: x-large;
+      }
+
+      #contactelogo {
+        display: flex;
+        margin-top: 50px;
+        margin-left: 50px;
+        justify-content: space-evenly;
+      }
+
+      #contacttextbox > div {
+        /* border: 1px solid red; */
+        text-align: justify;
+        color: white;
+      }
+      #payementcardicon {
+        /* border: 1px solid green; */
+        width: 600px;
+        margin-left: 47%;
+      }
+      #payementoptions {
+        /* border: 1px solid black; */
+        width: 200px;
+        color: rgb(219, 210, 210);
+        justify-content: space-evenly;
+        display: flex;
+      }
+      #leftcontact {
+        width: 45%;
+
+        margin-top: 50px;
+        height: 320px;
+        margin-left: 50px;
+      }
+      #rightcontact {
+        width: 55%;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 50px;
+        height: 320px;
+      }
+      #rightcontact > div {
+        margin: 10px;
+        color: white;
+      }
+      .rmaintext {
+        font-size: x-large;
+        margin: 15px 0px;
+        font-weight: 600;
+      }
+      .rsubtext > div {
+        margin: 10px 0px;
+        font-weight: 450px;
+        font-size: medium;
+      }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="changeanimation">
+        <h1 class="textchange"></h1>
+      </div>
+
+      <!-- ====navbar -->
+      <div id="Header">
+        <div id="Fixed">
+            <div id="Home_Buttons">
+                <a href="../../index.html"><img id="Blue_Logo" src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/BLUEFLY-LOGO-11-20.png?v=1574278243" alt=""></a>
+                <div id="symbol">
+                <a href="#"><img class="H_but" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWXI_JyOVRGL5fOKjn9qMUF3pWkgFcfDm1oQ&usqp=CAU" alt=""></a>
+                <a href="#" class="search" style="font-size: larger; margin-bottom: 30px;">SEARCH</a>
+                <a href="login.html"><img class="H_but" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwwJnHBJdUyCsrW7qVQ8vdXeTmdRD6Js9Pmg&usqp=CAU" alt=""></a>
+                <a href="cart.html"><img class="H_but" src="https://media.istockphoto.com/vectors/thin-line-shopping-bag-icon-illustration-design-vector-id653355496?k=20&m=653355496&s=170667a&w=0&h=VQQIU3uqbQuubef1qJCnAobIImZwE1LLbx51XIqQlPY=" alt=""></a>
+            </div>
+            </div>
+            <nav>
+                <p  class="hoverEff" id="Hand_Hover"><a href="boot.html">SHOES</a></p>
+                <p  class="hoverEff" id="Design_Hover"><a href="boot.html">DESIGNERS</a></p>
+                <p  class="hoverEff" id="Women-Hover"><a href="#">WOMEN</a></p>
+                <!-- <p class="hoverEff" id="Shoe_Hover"><a href="#">SHOES</a></p> -->
+                <p  class="hoverEff" id="Men_Hover"><a href="#">MEN</a></p>
+                <p  class="hoverEff" id="Sunglass_Hover"><a href="#">SUNGLASSES</a></p>
+                <p  class="hoverEff" id="Watch_Hover"><a href="#">JEWELRY & WATCHES</a></p>
+                <p  class="hoverEff" id="Under_Hover"><a href="#">UNDER $50</a></p>
+                <p  class="hoverEff" id="Beauty_Hover"><a href="#">BEAUTY</a></p>
+            </nav>
+            <div id="clearance"><a href="#" id="Clearance">CLEARANCE</a></div>
+        </div>
+        <div id="Spacediv">
+
+        </div>
+  
+    <div id="mainbagdiv">
+
+        <div id="leftbagdiv">
+            <h1>Shopping Bag </h1>
+            <div id="baginput">
+                <a id="a1" href="Information.html">Continue to Checkout <i class="fas fa-chevron-right"></i> </a>
+                <a id="a2" href="boot.html">Continue to Shopping <i class="fas fa-chevron-right"></i></a>
+            </div>
+            <div id="rewards">
+                <h2>Credo Rewards </h2>
+                <p>To earn and redeem  Rewards points, <span style="color:#be6274"
+                        onclick="window.location.href='login.html'">sign in</span> or <span style="color:#be6274"
+                        onclick="window.location.href='sign_up.html'">create account</span>.</p>
+                <div id="icontag">
+                    <i class="fa fa-star-o" style="font-size:30px;color:rgb(170, 166, 166),"></i>
+
+                    <h4 style="margin:5px;margin-left: 5px;font-weight: 450;">Earn upto 2 points <br> per dollar spent
+                    </h4>
+                    <i class="fas fa-gift" style="font-size: 30px;color: rgb(53, 53, 53);"></i>
+                    <h4 style="margin:5px;margin-left: 5px;font-weight: 450;">Get Free point <br> on your birthday</h4>
+                    <i class="far fa-user" style="font-size: 30px;color: rgb(53, 53, 53);"></i>
+                    <h4 style="margin:5px;margin-left: 5px;font-weight: 450;">Get access to <br> special events </h4>
+                    <i class="fas fa-box" style="font-size: 30px;color: rgb(53, 53, 53);"></i>
+                    <h4 style="margin:5px;margin-left: 5px;font-weight: 450;">Qualify for free <br> shipping </h4>
+                </div>
+            </div>
+
+
+            <div>
+                <h1>ITEMS IN BAG</h1>
+                <div class="maincont">
+
+                </div>
+            </div>
+
+        </div>
+        <!-- order summary div -->
+        <div id="ordersummary">
+            <h1>Order Summary</h1>
+
+            <div id="totalcount">
+                <h4>Merchandise subtotal</h4>
+                <h4 id="total1" style="font-weight: 600;"></h4>
+            </div>
+            <div id="totalcount">
+                <h4>Shipping & Handling</h4>
+                <h4 style="font-weight: 600;">TBD</h4>
+            </div>
+            <div id="totalcount">
+                <h4>Tax</h4>
+                <h4 style="font-weight: 600;">TBD</h4>
+            </div>
+            <hr>
+
+            <div id="totalcount">
+                <h2>Estimated Total</h2>
+                <h2 id="total2"></h2>
+            </div>
+            <div>
+                <p>or 4 interest-free installments of $22.00 <button
+                        style="background-color: lightsteelblue; border: 0px; border-radius: 20px;">
+                        afterpay</button></p>
+
+                <button id="swapy">Add a gift message ></button>
+                <br>
+                <button id="swapy2" onclick="window.location.href='Information.html'">CONTINUE TO CHECKOUT</button>
+                <br>
+                <button id="swapy3">PAY WITH<img height="43px" style="padding: 0px;"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASsAAACoCAMAAACPKThEAAAA4VBMVEX///8AMIcAnN4BIWkAldwAmd0AlNwALoYAmt0AE34Al90ALYbe4OoAJ4QAKoUAEX4AJIPj8voAIIIAG4Dj5u9suudse6wAAHsADH1OYJze7fkAGYDL5fbX6/gAh8iep8YBEmCPmr64v9Xx8/eAwurC4PSo1PCPyOzL0OA7qeLCyNthteadz+6rs82EkLjr7vQBKHYBGGNeb6U6qOI2T5V5hrJDWZpSsOQcPY3T2OUlRI8AMX4ASowAaakBJnIBU5MBL3QAeboBE2AAWqUAbrUAgMQATJoAYapldagAdLpIXZvq4T9CAAAJhElEQVR4nO2ce3/auBKGwcVXsDE2wSYkpYFwSULCpkna0N1227329Pt/oGNbGlnCljFrfOD8dp6/isFGjKTRO6+UNhoIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAIgiAI8u9i3cmjf+xmnSIPgZlHN7SHV8tjN+606ARNCbrjmt7D9NgNPCHuPVmsEtxwfOwWng4PbmGsmrr5/thNPBmGTnGsmk3/+7HbeCo09V2xanbvj93IEyHcGaqm7h+7kadBx9wdq6aPAytm4peIlTM8djNPgqsdyyBOwpTvdolYNUNUpBGf2mVi1V0fu52nQIllsNS46gscOrTTnsCeo5zeVbUR/S4fkp/e5PDlp2hc7XjMMuiKRIX3+HBOxUJrCWgt5W5eOmDX5G5tVbEVtyM+VnmhSvh5x2OGmaynO14wPFS0NGUbw7C065J3PxnJLeqiYivGfOWcO6xiHn9RLgofY+eKfzu4rdg8Qq+ViVXy45Vy08oiH7fmFZvxYpeK1WdFmxU8ZSrJenqwqdi+hJmVG6tocJW5u0dHZeuyYjM+8JXzF1ms3r2NvqogP2xk4r/drNi+hJWaHytFPStx9wWNtFZV93j85JGmq8e4XXfyp8jFvzmp2MCYM1msSv3+OYmVoVRshTh5pKH6dUe7mPh3zG7XHHmpZrMHFVsYc2PAOIqWM8viIlcmB12TzxsfK7ZiU2oZjKdgYbtA/DvDSFttlldNlgXbrxVbGAPpSl30eueXs2sLYqeoJdbCj0bpjxYiGsiyWH3d9WWvdCCNYN1L06BbsYURU5AMGr3QU9lAK5GwDOMwy6BgIMuWwXffyCCWJyzY3uh26AXm9OgHiBUk53TZY8m+oE0ARNoqVj27EQxkWay+KjsmPBP/IbvEYnWAhXBubTfggs3K3RPrkoozrWqNIxjIEslAslVRH4L455ITxMr5wS51Jvfj8eQfCC6anLnApLFK65bL+Xw1n2UDApG29v9igTLLIJ2BRX0I4t9mOz5rGGnuC7nQf7C7vud5fnc0WDfWryS2H6J3JmQdaIu7RVc01PFVmpy5jAO/X7GoQr64ixZIVbUsTYkqmRm5wUgavKDL4FPFWIkGcn6oPivZPtwCxL97BVeY4PKJvhoELoxg3Q2W9yM9IVhHb7nk3ya/DzkJ2snFdtBgyZnLOExwkYl1/qSxldGwlMadasSoiaK6M0qvAoWIGrI4VKwPs8Cq5zPh+Qx5MIzdmY0nmK+6+568rZuNdAI7H9IHTkHKdOMnakJg4rehPiT6cpVGKrl4Q4tlkjQUY0dPl+RqxzL4+Phn2ga5Fu3SMWNCMnoAKeI8N+JBslVZ6w73bgM+y3lkYFu48RSE5Ky04O0nJhli6+B624WAcUiMBVgGi+rZMnwvrJwf3/3KdZi8RlhD1iMuV3/yzFTb6D72tmQ7kETUv7jbo/LehAEYv4LK2bhJ3jxfGaxV8Uhb5JsQCs1v4FG0qi6DgoH8ZStQbz4LZZjc/lnCjNFd3x+FXZ8JkXY7nk9ppvJN0+dUipekqCWNjA3b22uT3hEmx3QWrBlqlL21lpqq9miSzdioMlQryu9c7ybGAkRak7W+LOIy+Ntv74A3v3x+u9VL2rnsKan4j9Mx/8jwlrMB7dHLZLO5H6brCZX51Pxim0WQ/jyyht4ZioTY+mDBsZTF7PJipaQdnCQNKlsrV86Cgax//faWklfWqzfSx0hPj/jRHFtCf4xAFExYD1GZD5PQJKe9xltqTZHFKrbU2KBjDvE16Aki8+mSWULgF8MbyLou6z3aFnmJIDs9Mhpyb9JBkgQDxmFAXoP75T7Er/ohHZoBLZiyBjIXHQgMZ0WCHCMy/6YGA7n9e2Go1AJHI99AdoL4p69pqUiWPArNR0zmt+nrpB4CueFTsSYzkFtxdECU8jr5QrhWh4Hs/FEUKsOSm1d5BnLbDZ8TAQG5zORPU9KxxmQ+TOKwn85AFtw8A1lVtbukQZDLhAIGVEIcnmkdBrL9Z7ZJKQUzkDOQbT9hZIafHqjUGpDu0G3+DipVmMzf0LwZrYt9Gng9hC3G1ECOSpiEVutmRRUAVIqCKIehFLe5FgPZlsqUaFQVbkww8e8NJgm3nbRhVJU4QrVH+ygVVE36qQ+NT7T7THYyh9Uz1mqWcJEqJRg1qjDD6MVE5tdiINvyUKlG4QAG8Z97mIZ2h/3CX6Tfy2Q+e4T7AlV4+iwwkPOKFJD0giiHoZTI/EMZyEt+GXyVjSl1154liH8v7xAunV3CuIIclhY1Heg1SKCjdGQySyGnw1ga58cVzWHEWKjDQM5bBo1YJiuLXTM9YyDz+Fs6M4ZaDrqTfQYlTHd/etsGMs9lxgWM4gfzMslhdRjIzt9ClFpWvF1yczaXivWUjIHMA0HwmF3DRAE/Z8VTYC53mJfZenn7piyQLbb29CC9kTlbh4HsfONDpZQIEcDEf5D37gBmVZcGa8nmGZGehA6fOuMqkpE1kHnSCodmrHlLuFKLgWzz5d9evZBjIHOkDpnXfhmPX15NNts8/hAqX8UHvBbLGsg86S5r6+l6vjpTUzGWGAuzOgxkmy+69qrJswaygMk6RHc9z+VCMlrmPCWO4QN/f9ZA5rlIC6Aou6rq9o84lIEsHkLgp2CpIxVA1kAWuMps30PwQv5AW5913Nb4zBrIAjeywtqozUDW/+K/Zi8x8pwxkEU+iUezdP+VLoNm7mNYyUzJGMgiPdE/Zp5ojQZym18G9xMj5raBvMW0ya9xTjChZrtQTaf11khUaVkDeYsLIViRbAbJVZuB7PyH+8K9xMg0sBPc3GUw4X0Ibp4b/ug3fDe5oSukJZiqWxFszDSVIM045wocb0hkc4/ekJRl7EXVapDXf0LlvJ8YGQ8IBZukm4EdmqYZNl/iD02+J58X0tuGijQ9c+D5+oxQUGbNPlpay2ppT4t4ni7I50l/0xdV1VWjbTsMT1hBKp/YzTLtbDoFnUuL53/8V1K9y8saGp2y/DFk/ODzY1Uxsj8DmtIkuuO06HGGmiF31msCHHjd+3/48wzefKwsRvZlyva4DnNsuWYWXL6qLEb2BeSCe4jzkvXD78FVFiN7wva4DnJmuX74Pbg6lsEC2P95cJiz8PXzMf2Dl9J/unEgbul/pRHk15MnyDnjfzuqIvr4f7IgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgCIIgyOH5L+iRvAxO6cHLAAAAAElFTkSuQmCC"></button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="whatstrending">
+        <h1>What's Trending</h1>
+    </div>
+    <div id="bottomimages">
+        <div id="frontproductwindow">
+            <div id="hovereffect">
+                <img id="imagetop1"
+                 src="https://cdn.shopify.com/s/files/1/0637/6147/products/20211029_EDITORIAL_BEAUTY_GOOP-GLOW-CLOUDBERRY_SHOT-02_00662_320x.jpg?v=1642217234" 
+                    alt="">
+                <!-- <img id="frontproductimg"
+                    src="https://images.ulta.com/is/image/Ulta/2589236?op_sharpen=1&resMode=bilin&qlt=85&wid=290&hei=250&fmt=jpg"
+                    alt="img"> -->
+                <div style="background-color: thistle; text-align: center; width: 60px; height: 20px; margin: auto;">
+                    <h6>New</h6>
+                </div>
+                <div id="pricebar">
+                    <p>Osea</p>
+                    <h4>Undaria Algae Body Butter</h4>
+                    <h5>$18.00-$48.00</h5>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+
+            </div>
+            <div id="verticalline"></div>
+            <div id="hovereffect">
+                <img id="imagetop1"
+                    src="https://cdn.shopify.com/s/files/1/0637/6147/products/Swatch_320x.png?v=1641852542" alt="img">
+                <!-- <img id="frontproductimg"
+                    src="https://cdn.shopify.com/s/files/1/0637/6147/products/Miracle-BalmpTawny1_540x.jpg?v=1641779377"
+                    alt="img"> -->
+                <div style="background-color: thistle; text-align: center; width: 60px; height: 20px; margin: auto ">
+                    <h6>New</h6>
+                </div>
+                <div id="pricebar">
+                    <p>Jones Road</p>
+                    <h4>Miracle Balm</h4>
+                    <h5>$38.00</h5>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span>
+                </div>
+
+            </div>
+            <div id="verticalline"></div>
+            <div id="hovereffect">
+                <img id="imagetop1"
+                    src="https://cdn.shopify.com/s/files/1/0637/6147/products/Face-pencil-swatch-1_320x.jpg?v=1641610376"
+                    alt="">
+                <!-- <img id="frontproductimg"
+                    src="https://cdn.shopify.com/s/files/1/0637/6147/products/face-pencil-shade1.jpg?v=1641610601"
+                    alt="img"> -->
+                <div style="background-color: thistle; text-align: center; width: 60px; height: 20px; margin: auto ">
+                    <h6>New</h6>
+                </div>
+                <div id="pricebar">
+                    <p>Jones Road</p>
+                    <h4>The Face Pencil</h4>
+                    <h5>$25.00</h5>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star "></span>
+                    <span class="fa fa-star"></span>
+                </div>
+
+            </div>
+            <div id="verticalline"></div>
+            <div id="hovereffect">
+                <img id="imagetop1"
+                    src="https://cdn.shopify.com/s/files/1/0637/6147/products/MF_MiniBakuchiolEcomm2000x2000_3d9016d2-b00e-4471-84a3-393f3e3fbfbc_720x.jpg?v=1638498639"
+                    alt="">
+                <!-- <img id="frontproductimg"
+                    src="https://cdn.shopify.com/s/files/1/0637/6147/products/UABB_Lifestyle_320x.jpg?v=1640113156"
+                    alt="img"> -->
+                <!-- <img id="frontproductimg" src="https://cdn.shopify.com/s/files/1/0637/6147/products/MF_MiniBakuchiolEcomm2000x2000_3d9016d2-b00e-4471-84a3-393f3e3fbfbc_720x.jpg?v=1638498639" alt="img"> -->
+                <div style="background-color: thistle; text-align: center; width: 60px; height: 20px; margin: auto ">
+                    <h6>New</h6>
+                </div>
+                <div id="pricebar">
+                    <p>Harbivore Botanicals</p>
+                    <h4>Moon Fruit Retinol Alternative Sleep <br> Mask</h4>
+                    <h5>$54.00</h5>
+                    <div style="align-items: center;">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+      <div id="Main_Foo_Div">
+        <div id="Foo1">
+            <div id="Foo1_div1">
+                <p><a href="#">Contact Us</a></p>
+                <p><a href="#">Frequently Asked Questions</a></p>
+                <p><a href="#">Shipping & Returns</a></p>
+                <p><a href="#">Pre-Owned Guide</a></p>
+            </div>
+            <div id="Foo1_div2">
+                <p><a href="#">Sell On Bluefly</a></p>
+                <p><a href="#">Privacy Policy</a></p>
+                <p><a href="#">Terms & Conditions</a></p>
+            </div>
+            <div id="Foo1_div3">
+                <p>Subscribe to get exclusive offers on designer brands</p>
+                <input type="email" placeholder="Enter Your Email">
+                <br>
+                <button>Submit</button>
+                <div id="Social_Acc">
+                    <a href="#"><img src="https://www.edigitalagency.com.au/wp-content/uploads/Instagram-logo-glyph-black-white-large-png.png" alt=""></a>
+                    <a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAflBMVEX///8EAgQAAADFxcWgoKC8vbxGRUZbWltTU1M0NDQoKSg4OThDQkNhYWFtbG0gISAsLixLSUsdHR11dXVnaGcODQ4YFhjx8fH3+PeysrKqqqpQT1B9fX1nZmdhYGHV1dXn6OeNjI2Eg4Td3t1WVFbS0dLq6eqXmJebm5sjICO4H7iJAAAD20lEQVR4nO3di3LaMBSE4ViAyQ1IAsQEaLnlQt7/Bcu0M50yMcFHVrUrsf8DZM4XEyC2LF9dwZpVu87L/FD3XB3ckJ5Vu5fNpJy6pm3RA5uqOpvF05/Bi4alJFx3SxsuLWE1L824lITrbeGj+y1coodvULX0OnrpCLstfCkId2Ub30E4RgvONG/n4xdu2wLJhbNBWx+78LU9sHBDtOKbAhzBg3CCZpxuHALILOwGARbuBxpyqrfW76LswmkYIK9wGwhYuAGaUt8q0Gv0IPyJttQX5IOCWRjuELIKwx3CwvXRmLrewx1CUuFHOCCpMNRnIa1wFRDIKQz5Ii3cNZpTU5m7MOQ7KaewExJIKQz6Z0gpnOQunN3lLqyCvtEwCtdBgYzCsG+lhVugQV+aZy/c+18qrI3vVbqxCs+sxSjRoC9Zz7I5d//RW61n6LmbtzSutbhJbkmQ7XKFG72jBzY3tAl76Hntmc6zuSl6XI/6JiHrVYnvujYJ9+hxPXo0CRP8M7y6Nwnf0ON6ZPr30O3Q43p0YxKu0eN69JC98NYkrNDjejTKXvgk4YUJE/q38G/5C02XRy9AiJ7WJ4vQSUiZhBLyJ+GRsEBP65OO4ZEwxdOlNuEzelqfTMIn9LQ+mYQj9LQ+mYS36Gm/q+rUZxOe+CH/hDtn3Dl1Wbo58OwVbuxV7sCrSk7+DnB358USfmQvfMleiFvIEEfo3Cp7Ie76Wywh7qx4JCHwu3kkIfB7XSThY/ZC4M3qkYSb7IXAJUWRhLgvbbGEwNWnkYS4L22xhOvshcCLxFGE0JPicYTIE6pxhPfZC5F7RsQRInfciyPEnWmLJexmL0SudI8jRK50jyNE3hUVQ4g80xZJOM1eeIdcnRlFCN2cJooQurVnFCF0m+QoQujNe2GEZy7iQ2/eC7JSoSi/9rhYLPr9wXC83MyhC93fe/U9Z7/qy3K/hYScSSghfyZhkqsvJZSQPwnTF35mL7TsOCAhZxJKyJ9JSH3PzKlMwgf0tD5JKCF/EqYvtOxmJiFnEkrIn4RHwjv0tD5JKCF/EqYvtOwjnKbQshe0hJxJKCF/Eh4JkTdueSehhPxJmL7Q8iTZNIWW58xIyJmEEvJnEvI9vrFBJiHfQ0YbZBICd/LyT8L0hZanA0rImYQXJkzy89Ak5HvodoMkTF/4mr3Q8sRjCTmTUEL+TELoDju+SZi+cCChhPRJKCF/JuEAPa1PEqYvnEgoIX0SSsifSQh8mpN/JiF0F13fhhJKSJ+EEvIn4YUJx+hpfRpLKCF9EkrIX/7C4ZmHchyV5Cd+b99t3P5/P4PkF79qWBJNnBzqAAAAAElFTkSuQmCC" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div id="Foo2">
+            <a href="../../index.html"><img src="https://cdn.shopify.com/s/files/1/0248/3473/6191/files/Untitled_2_.png_5_x104@2x.png?v=1620852820" alt=""></a>
+            <p>© 2022 Bluefly 1998-2020 BLUEFLY.COM OR ITS AFFILIATES ALL RIGHTS RESERVED.</p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+
+
+
+    var cartArr = JSON.parse(localStorage.getItem("cart")) || [];
+    var WishlistArr = JSON.parse(localStorage.getItem("Wishlist")) || [];
+
+    var cartvalue = JSON.parse(localStorage.getItem("cartValue")) || 0
+
+    carttotal()
+    displayvalue(cartvalue);
+
+   
+    displayData(cartArr);
+
+    function displayData(cartArr) {
+
+        document.querySelector(".maincont").innerHTML = "";
+
+        cartArr.map(function (data, hn) {
+
+
+            var div = document.createElement("div")
+            div.setAttribute("id", "cartitem");
+
+            var imgdiv = document.createElement("div");
+            imgdiv.setAttribute("id", "cartimgdiv");
+
+            var image = document.createElement("img");
+            image.setAttribute("src", data.image_url);
+
+            
+
+            var textdiv = document.createElement("div");
+            textdiv.setAttribute("id", "carttextdiv");
+
+
+            var brandname = document.createElement("p");
+            brandname.setAttribute("id", "cartbrandname");
+            brandname.textContent = data.brandname;
+
+            var cartline1 = document.createElement("div");
+            cartline1.setAttribute("id", "cartline1");
+
+            var productName = document.createElement("div");
+            productName.textContent = data.productName;
+
+            var price = document.createElement("div");
+            price.textContent = "$" + data.price;
+
+            var cartline2 = document.createElement("div");
+            cartline2.setAttribute("id", "cartline2");
+
+            var div1 = document.createElement("div");
+            div1.textContent = data.available;
+
+            var div2 = document.createElement("div");
+            div2.setAttribute("id", "addvaluebutton");
+            div2.textContent = "Qty: 1 no."
+
+            var cartbottom = document.createElement("div");
+            cartbottom.setAttribute("id", "cartbottom");
+
+            var remove = document.createElement("div");
+            remove.textContent = "Remove"
+            remove.setAttribute("id", "bottomline1");
+            remove.addEventListener("click", function () {
+                deletefromcart(hn)
+
+            })
+
+
+
+            var wishlist = document.createElement("div");
+            wishlist.textContent = "Save to Wishlist"
+            wishlist.setAttribute("id", "bottomline2");
+            wishlist.addEventListener("click", function (data) {
+                addToWishlist(data);
+                wishlist.textContent = "Saved to wishlist"
+                wishlist.setAttribute("id", "onclickchange")
+            })
+
+            imgdiv.append(image);
+            cartline1.append(productName, price)
+            cartline2.append(div1, div2)
+
+            cartbottom.append(remove, wishlist)
+            textdiv.append(brandname, cartline1, cartline2, cartbottom)
+            div.append(imgdiv, textdiv)
+
+            document.querySelector(".maincont").append(div);
+
+            
+        });
+    }
+    function deletefromcart(hn) {
+
+        cartArr.splice(hn, 1);
+        localStorage.setItem("cart", JSON.stringify(cartArr));
+        displayData(cartArr);
+        location.reload()
+
+        displayvalue(cartvalue);
+
+    }
+    function addToWishlist(data) {
+        WishlistArr.push(data);
+        localStorage.setItem("Wishlist", JSON.stringify(WishlistArr));
+        console.log(WishlistArr);
+    }
+
+    function carttotal() {
+        var total = cartArr.reduce(function (acc, cvv) {
+            return acc + Number(cvv.price)
+        }, 0)
+        localStorage.setItem("cartValue", JSON.stringify(total));
+        displayvalue(cartvalue);
+    }
+    function displayvalue(cartvalue) {
+
+document.querySelector("#total1").textContent = "$" + cartvalue
+document.querySelector("#total2").textContent = "$" + cartvalue
+}
+
+</script>
